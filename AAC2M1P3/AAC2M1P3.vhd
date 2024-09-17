@@ -55,7 +55,7 @@ architecture not_good of find_errors is         -- line 10
     if c = x"3F" then  								-- line 14 Hint: select 111111 for c value
       b <= a;                                -- line 15
     else                                     -- line 16
-     b <= '0101';                            -- line 17
+     b <= "0101";                            -- line 17
     end if;                                   -- line 18
   end process my_label;                               -- line 19
 end not_good;                                 -- line 20

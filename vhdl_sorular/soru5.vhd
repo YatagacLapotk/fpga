@@ -10,7 +10,7 @@ end soru5;
 architecture soru5_arch of soru5 is 
 begin 
 with ((not(L) and not(M)) and N) or (L and M) select 
-    F3 <= '1' when '1'
-          '0' when '0'
+    F3 <= '1' when '1',
+          '0' when '0',
           '0' when others;
 end soru5_arch; 

@@ -11,9 +11,9 @@ end soru4;
 
 architecture soru4_arch of soru4 is 
 begin 
-    outmux <= A when SEL = '00' else
-              B when SEL = '01' else
-              C when SEL = '10' else
-              D when SEL = '11' else
+    outmux <= A when SEL = 2b"00" else
+              B when SEL = 2b"01" else
+              C when SEL = 2b"10" else
+              D when SEL = 2b"11" else
               0;
 end soru4_arch;

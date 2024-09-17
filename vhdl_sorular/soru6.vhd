@@ -11,9 +11,9 @@ end soru6;
 architecture soru6_arch of soru6 is 
 begin 
 with SEL select
-    outmux <= A when '00'
-              B when '01'
-              C when '10'
-              D when '11'
+    outmux <= A when 2b"00",
+              B when 2b"01",
+              C when 2b"10",
+              D when 2b"11",
               0 when others;
 end soru6_arch;
