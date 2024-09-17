@@ -1,5 +1,5 @@
 library ieee;
-use std_logic_1164.all;
+use ieee.std_logic_1164.all;
 
 entity soru2 is port(
     L, M, N : in std_logic;
