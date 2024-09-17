@@ -44,6 +44,8 @@ end comparator2;
 
 architecture comparator2_arch of comparator2 is 
 begin 
+    Equals <= A xnor B;
+end comparator2_arch;
 
 
 
