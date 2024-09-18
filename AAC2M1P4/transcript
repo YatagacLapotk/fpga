@@ -1,0 +1,18 @@
+# Compile of AAC2M1P4.vhd was successful.
+# Compile of AAC2M1P4_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.AAC2M1P4_tb
+# vsim work.AAC2M1P4_tb 
+# Start time: 12:49:55 on Sep 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m1p4_tb(behavioral)
+# Loading work.majority(behavioral)
+run -all
+# ** Note: This simulation is complete
+#    Time: 100 ns  Iteration: 0  Instance: /aac2m1p4_tb
+# End time: 12:50:09 on Sep 18,2024, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 6
