@@ -52,8 +52,8 @@ architecture not_good of find_errors is         -- line 10
   begin                                      -- line 11
   my_label: process(a,c)                          -- line 12
     begin                                    -- line 13
-    if c = x"3F" then  								-- line 14 Hint: select 111111 for c value
-      b <= a;                                -- line 15
+    if c = "111111" then  								-- line 14 Hint: select 111111 for c value
+      b <= to_stdlogicvector(a);                                -- line 15
     else                                     -- line 16
      b <= "0101";                            -- line 17
     end if;                                   -- line 18

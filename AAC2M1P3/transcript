@@ -1,0 +1,102 @@
+# Compile of AAC2M1P3.vhd failed with 1 errors.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of AAC2M1P3.vhd was successful with warnings.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.AAC2M1P3
+# vsim work.AAC2M1P3 
+# Start time: 12:34:30 on Sep 18,2024
+# ** Error: (vsim-3170) Could not find 'AAC2M1P3'.
+#         Searched libraries:
+#             C:/nand2tetris/fpga/AAC2M1P3/work
+# Error loading design
+# End time: 12:34:31 on Sep 18,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 7
+vsim work.AAC2M1P3_tb
+# vsim work.AAC2M1P3_tb 
+# Start time: 12:34:47 on Sep 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m1p3_tb(behavioral)
+# Loading work.find_errors(not_good)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "a".
+#    Time: 0 ps  Iteration: 0  Instance: /aac2m1p3_tb/Mux4 File: C:/nand2tetris/fpga/AAC2M1P3/AAC2M1P3.vhd Line: 46
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 12:34:48 on Sep 18,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of AAC2M1P3.vhd was successful with warnings.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of AAC2M1P3.vhd failed with 1 errors.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of AAC2M1P3.vhd failed with 3 errors.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of AAC2M1P3.vhd failed with 2 errors.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of AAC2M1P3.vhd failed with 2 errors.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of AAC2M1P3.vhd was successful.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of AAC2M1P3.vhd failed with 1 errors.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of AAC2M1P3.vhd was successful.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.AAC2M1P3_tb
+# vsim work.AAC2M1P3_tb 
+# Start time: 12:41:19 on Sep 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m1p3_tb(behavioral)
+# Loading work.find_errors(not_good)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "a".
+#    Time: 0 ps  Iteration: 0  Instance: /aac2m1p3_tb/Mux4 File: C:/nand2tetris/fpga/AAC2M1P3/AAC2M1P3.vhd Line: 46
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 12:41:19 on Sep 18,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 10
+# Compile of AAC2M1P3.vhd was successful.
+# Compile of AAC2M1P3_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.AAC2M1P3
+# vsim work.AAC2M1P3 
+# Start time: 12:43:09 on Sep 18,2024
+# ** Error: (vsim-3170) Could not find 'AAC2M1P3'.
+#         Searched libraries:
+#             C:/nand2tetris/fpga/AAC2M1P3/work
+# Error loading design
+# End time: 12:43:10 on Sep 18,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+vsim work.AAC2M1P3_tb
+# vsim work.AAC2M1P3_tb 
+# Start time: 12:43:14 on Sep 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m1p3_tb(behavioral)
+# Loading work.find_errors(not_good)
+run -all
+# ** Note: This simulation is complete
+#    Time: 10260 ns  Iteration: 0  Instance: /aac2m1p3_tb
