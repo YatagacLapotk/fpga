@@ -1,0 +1,32 @@
+# Compile of AAC2M1P1.vhd was successful.
+# Compile of AAC2M1P1_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.AAC2M1P1_tb
+# vsim work.AAC2M1P1_tb 
+# Start time: 12:17:27 on Sep 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m1p1_tb(behavioral)
+# Loading work.comparator2(comparator2_arch)
+run
+run
+run -all
+# ** Note: This simulation is complete
+#    Time: 180 ns  Iteration: 0  Instance: /aac2m1p1_tb
+vsim work.aac2m1p1_tb
+# End time: 12:20:27 on Sep 18,2024, Elapsed time: 0:03:00
+# Errors: 0, Warnings: 6
+# vsim work.aac2m1p1_tb 
+# Start time: 12:20:27 on Sep 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m1p1_tb(behavioral)
+# Loading work.comparator2(comparator2_arch)
+# End time: 12:20:46 on Sep 18,2024, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 1
