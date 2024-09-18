@@ -1,0 +1,20 @@
+# Compile of AAC2M1H1_tb.vhdp was successful.
+# Compile of AAC2M1H1.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.aac2m1h1_tb
+# vsim -gui work.aac2m1h1_tb 
+# Start time: 12:58:11 on Sep 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m1h1_tb(behavioral)
+# Loading work.fulladd(behavioral)
+run -all
+# ** Note: This simulation is complete
+#    Time: 100 ns  Iteration: 0  Instance: /aac2m1h1_tb
+# End time: 12:58:23 on Sep 18,2024, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 6
