@@ -100,3 +100,5 @@ vsim work.AAC2M1P3_tb
 run -all
 # ** Note: This simulation is complete
 #    Time: 10260 ns  Iteration: 0  Instance: /aac2m1p3_tb
+# End time: 12:44:14 on Sep 18,2024, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 1
