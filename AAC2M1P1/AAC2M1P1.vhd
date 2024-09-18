@@ -43,8 +43,12 @@ entity comparator2 is port (
 end comparator2;  
 
 architecture comparator2_arch of comparator2 is 
+signal a1b1  : std_logic;
+signal a0b0  : std_logic; 
 begin 
-    Equals <= A xnor B;
+      a0b0 <= A(0) xnor B(0);
+      a1b1 <= A(1) xnor B(1);
+      Equals <= a0b0 and a1b1;
 end comparator2_arch;
 
 
