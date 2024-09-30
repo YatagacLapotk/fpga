@@ -22,3 +22,4 @@ architecture RTL of FIFO8x9 is
 	signal dmuxout: std_logic_vector(8 downto 0);
 
 begin
+end architecture;
