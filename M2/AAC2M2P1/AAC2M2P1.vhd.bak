@@ -1,0 +1,112 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+entity AAC2M2P1 is port (                 	
+   CP: 	in std_logic; 	-- clock
+   SR:  in std_logic;  -- Active low, synchronous reset
+   P:    in std_logic_vector(3 downto 0);  -- Parallel input
+   PE:   in std_logic;  -- Parallel Enable (Load)
+   CEP: in std_logic;  -- Count enable parallel input
+   CET:  in std_logic; -- Count enable trickle input
+   Q:   out std_logic_vector(3 downto 0);            			
+    TC:  out std_logic  -- Terminal Count
+);            		
+end AAC2M2P1;
+
+architecture AAC2M2P1_arch of AAC2M2P1 is
+signal Q1: std_logic;
+signal Q2: std_logic;
+signal Q3: std_logic;
+signal Q4: std_logic;
+begin
+    DataA : process(CP)
+    variable signal1 : std_logic;
+    variable signal2 : std_logic;
+    variable K,J : std_logic;
+    begin
+        signal2 := SR nand PE;
+        signal1 := signal2 nor (not(CEP) nor not(CET)); 
+        K := (signal2 and Q1) nor (J and signal2);
+        J := (P(3) and ((SR and signal2) nor (not(Q1) and signal1)));
+        if (rising_edge(CP)) then
+            if (J='0' and K='0') then
+                Q1 <= Q1;
+            elsif (J='1' and K='1') then
+                Q1 <= not(Q1);
+            elsif (J='0' and K='1') then
+                Q1 <= 0;
+            else
+                Q1 <= 1;
+            end if;
+        end if; 
+    end process;
+    Q(3) <= Q1;
+    DataB : process(CP)
+    variable signal1 : std_logic;
+    variable signal2 : std_logic;
+    variable K,J : std_logic;
+    begin
+        signal2 := SR nand PE;
+        signal1 := signal2 nor (not(CEP) nor not(CET)); 
+        K := (signal2 and (Q2 and Q1)) nor (J and signal2);
+        J := (P(2) and (SR and signal2) nor ((not(Q2) and Q1) and signal1));
+        if (rising_edge(CP)) then
+            if (J='0' and K='0') then
+                Q2 <= Q2;
+            elsif (J='1' and K='1') then
+                Q2 <= not(Q2);
+            elsif (J='0' and K='1') then
+                Q2 <= 0;
+            else
+                Q2 <= 1;
+            end if;
+        end if; 
+    end process;
+    Q(2) <= Q2;
+    DataC : process(CP)
+    variable signal1 : std_logic;
+    variable signal2 : std_logic;
+    variable K,J : std_logic;
+    begin
+        signal2 := SR nand PE;
+        signal1 := signal2 nor (not(CEP) nor not(CET)); 
+        K := (signal2 and ((Q2 and Q3) and Q1)) nor (J and signal2);
+        J := (P(1) and (SR and signal2) nor ((not(Q3) and (Q1 and Q2)) and signal1));
+        if (rising_edge(CP)) then
+            if (J='0' and K='0') then
+                Q3 <= Q3;
+            elsif (J='1' and K='1') then
+                Q3 <= not(Q3);
+            elsif (J='0' and K='1') then
+                Q3 <= 0;
+            else
+                Q3 <= 1;
+            end if;
+        end if; 
+    end process;
+    Q(1) <= Q3;
+    DataD : process(CP)
+    variable signal1 : std_logic;
+    variable signal2 : std_logic;
+    variable K,J : std_logic;
+    begin
+        signal2 := SR nand PE;
+        signal1 := signal2 nor (not(CEP) nor not(CET)); 
+        K := (signal2 and ((Q2 and Q3) and (Q1 and Q4))) nor (J and signal2);
+        J := (P(0) and (SR and signal2) nor ((not(Q4) and (Q1 and (Q2 and Q3))) and signal1));
+        if (rising_edge(CP)) then
+            if (J='0' and K='0') then
+                Q4 <= Q4;
+            elsif (J='1' and K='1') then
+                Q4 <= not(Q4);
+            elsif (J='0' and K='1') then
+                Q4 <= 0;
+            else
+                Q4 <= 1;
+            end if;
+        end if; 
+    end process;
+    Q(0) <= Q4;
+    TC <= ((CET nor (not(Q1) nor not(Q2))) nor (not(Q4) nor not(Q3))); 
+end architecture;

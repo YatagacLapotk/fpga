@@ -28,16 +28,16 @@ begin
         signal2 := SR nand PE;
         signal1 := signal2 nor (not(CEP) nor not(CET)); 
         K := (signal2 and Q1) nor (J and signal2);
-        J := (P(3) and (SR and signal2) nor (not(Q1) and signal1));
+        J := (P(3) and ((SR and signal2) nor (not(Q1) and signal1)));
         if (rising_edge(CP)) then
             if (J='0' and K='0') then
                 Q1 <= Q1;
             elsif (J='1' and K='1') then
                 Q1 <= not(Q1);
             elsif (J='0' and K='1') then
-                Q1 <= 0;
+                Q1 <= '0';
             else
-                Q1 <= 1;
+                Q1 <= '1';
             end if;
         end if; 
     end process;
@@ -50,16 +50,16 @@ begin
         signal2 := SR nand PE;
         signal1 := signal2 nor (not(CEP) nor not(CET)); 
         K := (signal2 and (Q2 and Q1)) nor (J and signal2);
-        J := (P(2) and (SR and signal2) nor ((not(Q2) and Q1) and signal1));
+        J := (P(2) and ((SR and signal2) nor ((not(Q2) and Q1) and signal1)));
         if (rising_edge(CP)) then
             if (J='0' and K='0') then
                 Q2 <= Q2;
             elsif (J='1' and K='1') then
                 Q2 <= not(Q2);
             elsif (J='0' and K='1') then
-                Q2 <= 0;
+                Q2 <= '0';
             else
-                Q2 <= 1;
+                Q2 <= '1';
             end if;
         end if; 
     end process;
@@ -72,16 +72,16 @@ begin
         signal2 := SR nand PE;
         signal1 := signal2 nor (not(CEP) nor not(CET)); 
         K := (signal2 and ((Q2 and Q3) and Q1)) nor (J and signal2);
-        J := (P(1) and (SR and signal2) nor ((not(Q3) and (Q1 and Q2)) and signal1));
+        J := (P(1) and ((SR and signal2) nor ((not(Q3) and (Q1 and Q2)) and signal1)));
         if (rising_edge(CP)) then
             if (J='0' and K='0') then
                 Q3 <= Q3;
             elsif (J='1' and K='1') then
                 Q3 <= not(Q3);
             elsif (J='0' and K='1') then
-                Q3 <= 0;
+                Q3 <= '0';
             else
-                Q3 <= 1;
+                Q3 <= '1';
             end if;
         end if; 
     end process;
@@ -94,16 +94,16 @@ begin
         signal2 := SR nand PE;
         signal1 := signal2 nor (not(CEP) nor not(CET)); 
         K := (signal2 and ((Q2 and Q3) and (Q1 and Q4))) nor (J and signal2);
-        J := (P(0) and (SR and signal2) nor ((not(Q4) and (Q1 and (Q2 and Q3))) and signal1));
+        J := (P(0) and ((SR and signal2) nor ((not(Q4) and (Q1 and (Q2 and Q3))) and signal1)));
         if (rising_edge(CP)) then
             if (J='0' and K='0') then
                 Q4 <= Q4;
             elsif (J='1' and K='1') then
                 Q4 <= not(Q4);
             elsif (J='0' and K='1') then
-                Q4 <= 0;
+                Q4 <= '0';
             else
-                Q4 <= 1;
+                Q4 <= '1';
             end if;
         end if; 
     end process;

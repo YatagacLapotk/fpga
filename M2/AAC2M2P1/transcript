@@ -1,9 +1,12 @@
+# Compile of AAC2M2P1.vhd failed with 12 errors.
+# Compile of AAC2M2P1_tb.vhdp was successful.
+# 2 compiles, 1 failed with 12 errors.
 # Compile of AAC2M2P1.vhd was successful.
 # Compile of AAC2M2P1_tb.vhdp was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.aac2m2p1_tb
 # vsim -gui work.aac2m2p1_tb 
-# Start time: 12:22:23 on Sep 30,2024
+# Start time: 12:32:05 on Sep 30,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -12,27 +15,45 @@ vsim -gui work.aac2m2p1_tb
 # Loading ieee.numeric_bit_unsigned(body)
 # Loading ieee.std_logic_textio(body)
 # Loading work.aac2m2p1_tb(behavioral)
-# ** Error: (vsim-3173) Entity 'C:/nand2tetris/fpga/M2/AAC2M2P1/work.aac2m2p1' has no architecture.
-# Load interrupted
-# Error loading design
-# End time: 12:22:23 on Sep 30,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 6
-vsim -gui work.aac2m2p1_tb
-# vsim -gui work.aac2m2p1_tb 
-# Start time: 12:22:50 on Sep 30,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.numeric_bit(body)
-# Loading ieee.numeric_bit_unsigned(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.aac2m2p1_tb(behavioral)
-# ** Error: (vsim-3173) Entity 'C:/nand2tetris/fpga/M2/AAC2M2P1/work.aac2m2p1' has no architecture.
-# Load interrupted
-# Error loading design
-# End time: 12:22:51 on Sep 30,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 1
-# Compile of AAC2M2P1.vhd was successful.
-# Compile of AAC2M2P1_tb.vhdp was successful.
-# 2 compiles, 0 failed with no errors.
+# Loading work.aac2m2p1(aac2m2p1_arch)
+run -all
+# ** Note: RESET ERROR
+#    Time: 65 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: LOAD ERROR
+#    Time: 105 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: CEP HOLD ERROR
+#    Time: 145 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: LOAD ERROR
+#    Time: 185 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 205 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 225 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 245 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 265 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 285 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 305 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 325 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 345 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 365 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 385 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 405 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 425 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 445 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 465 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 485 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: This simulation is complete
+#    Time: 525 ns  Iteration: 0  Instance: /aac2m2p1_tb
