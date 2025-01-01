@@ -20,20 +20,17 @@ begin
       case(cur) is 
          when A => 
             if (In1 = '0') then nex <= A;
-            elsif(In1 = '1') then nex <= B;
-            else nex<= A;
+            elsif(In1 ='1') then nex <= B;
             end if;
             Out1 <= '0';
          when B => 
-            if (In1 = '0') then nex <= C;
-            elsif(In1 = '1') then nex <= B;
-            else nex<= B;
+            if(In1 = '1') then nex <= B;
+            elsif(In1 = '0') then nex<= C;
             end if;
             Out1 <= '0';
          when C => 
             if (In1 = '0') then nex <= C;
             elsif(In1 = '1') then nex <= A;
-            else nex<= C;
             end if;
             Out1 <= '1';
          when others => nex <= A; 
