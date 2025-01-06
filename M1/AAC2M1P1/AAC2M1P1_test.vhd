@@ -8,16 +8,16 @@ use work.all;
 ----------------------------------------------------------------------
 -- Testbench entity declaration
 ----------------------------------------------------------------------
-entity AAC2M1P1_tb is     
+entity AAC2M1P1_test is     
 --  port( ); 
 -- no external interface.....THIS IS THE TOP LEVEL
-end AAC2M1P1_tb;
+end AAC2M1P1_test;
 
 
 -------------------------------------------------------------------
 -- Testbench architecture body
 ----------------------------------------------------------------------
-architecture behavioral of AAC2M1P1_tb is      
+architecture behavioral of AAC2M1P1_test is      
 
 ----------------------------------------------------------------------
 --- constant declarations
@@ -105,4 +105,27 @@ DUT : comparator2      -- Device under test instantiation
          -- Outputs
         Equals    => c_tb
         );
-end behavioral; -- of AAC2M1P1_tb;   
+
+process 
+begin
+  a_tb <= "00";
+  b_tb <= "00";
+  wait for 100 ns;
+  a_tb <= "01";
+  b_tb <= "00";
+  wait for 100 ns;
+  a_tb <= "10";
+  b_tb <= "00";
+  wait for 100 ns;
+  a_tb <= "11";
+  b_tb <= "00";
+  wait for 100 ns;
+  a_tb <= "00";
+  b_tb <= "01";
+  wait for 100 ns;
+  a_tb <= "01";
+  b_tb <= "01";
+  wait for 100 ns;
+end process;
+end behavioral; -- of AAC2M1P1_tb;  
+
