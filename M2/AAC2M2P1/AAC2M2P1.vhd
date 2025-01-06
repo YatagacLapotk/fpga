@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity AAC2M2P1 ISPORT
+entity AAC2M2P1 IS PORT
   (
   CP  : in std_logic; -- clock
   SR  : in std_logic; -- Active low, synchronous reset
