@@ -32,7 +32,7 @@ begin
     end if;
   end process;
   Q <= curr;
-  TC <= CET and curr;
+  TC <= CET and curr(0) and curr(1) and curr(2) and curr(3);
   if TC ='1' then 
     curr<= "0000";
   end if;
