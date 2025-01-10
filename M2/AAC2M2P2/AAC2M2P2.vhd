@@ -21,9 +21,9 @@ begin
   begin
     if rising_edge(clock) then
       if wren = '1' then
-        ram_ad(conv_integer(address)) <= data;
+        ram_ad(to_integer(unsigned(address))) <= data;
       end if;
-      data_in <= ram_ad(conv_integer(address));
+      data_in <= ram_ad(to_integer(unsigned(address)));
     end if;
   end process;
   q <= data_in;
