@@ -16,21 +16,24 @@ entity AAC2M2P1 IS PORT
 end AAC2M2P1;
 
 architecture AAC2M2P1_arch of AAC2M2P1 is
-  signal Q_reg : std_logic_vector(3 downto 0) := (others => '0');
+  signal curr : std_logic_vector(3 downto 0); 
 begin
-  process (CP, SR)
-  begin
-    if (SR = '0') then
-      Q <= (others => '0');
-    elsif (rising_edge(CP)) then
-      if (PE = '1') then
-        Q_reg <= P;
-      elsif (CEP = '1'and CET = '1') then
-        Q_reg <= std_logic_vector(unsigned(Q_reg) + 1);
+  process (CP,CET,CEP,SR) begin
+    if rising_edge(CP) then
+      if SR = '1' then
+        if PE = '0' then 
+          curr <= P;
+        elsif (CET='1' and CEP='1') then
+          curr <= curr + 1;
+        end if; 
+      else
+        curr <= "0000"; 
       end if;
     end if;
   end process;
-  Q  <= Q_reg;
-  TC <= '1' when (Q_reg = "1111") else
-    '0';
+  Q <= curr;
+  TC <= CET and curr;
+  if TC ='1' then 
+    curr<= "0000";
+  end if;
 end architecture;
