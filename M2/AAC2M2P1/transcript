@@ -1,12 +1,12 @@
-# Compile of AAC2M2P1.vhd failed with 12 errors.
+# Compile of AAC2M2P1.vhd failed with 1 errors.
 # Compile of AAC2M2P1_tb.vhdp was successful.
-# 2 compiles, 1 failed with 12 errors.
+# 2 compiles, 1 failed with 1 error.
 # Compile of AAC2M2P1.vhd was successful.
 # Compile of AAC2M2P1_tb.vhdp was successful.
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.aac2m2p1_tb
 # vsim -gui work.aac2m2p1_tb 
-# Start time: 12:32:05 on Sep 30,2024
+# Start time: 00:37:52 on Jan 12,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -17,45 +17,9 @@ vsim -gui work.aac2m2p1_tb
 # Loading work.aac2m2p1_tb(behavioral)
 # Loading work.aac2m2p1(aac2m2p1_arch)
 run -all
-# ** Note: RESET ERROR
-#    Time: 65 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: LOAD ERROR
-#    Time: 105 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: CEP HOLD ERROR
-#    Time: 145 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: LOAD ERROR
-#    Time: 185 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 205 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 225 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 245 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 265 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 285 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 305 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 325 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 345 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 365 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 385 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 405 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 425 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 445 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 465 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 485 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: ROLL OVER ERROR
+#    Time: 505 ns  Iteration: 0  Instance: /aac2m2p1_tb
 # ** Note: This simulation is complete
 #    Time: 525 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# End time: 12:37:40 on Sep 30,2024, Elapsed time: 0:05:35
-# Errors: 0, Warnings: 7
+# End time: 00:38:24 on Jan 12,2025, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 4
