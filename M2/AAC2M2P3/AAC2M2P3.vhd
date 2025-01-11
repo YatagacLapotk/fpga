@@ -9,13 +9,13 @@ entity FSM is
     Out1 : inout std_logic);
 end FSM;
 architecture FSM_arch of FSM is
-  type state_type is (A, B, C, D);
+  type state_type is (A, B, C);
   signal cur, nex : state_type;
 begin
   timing_proc : process (clk)
   begin
     if rising_edge(clk) then
-      if reset = '1' then
+      if rst = '1' then
         cur <= A;
       else
         cur <= nex;
@@ -24,29 +24,31 @@ begin
   end process timing_proc;
   state_control : process (cur)
   begin
-    case(cur)
+    case cur is
       when A =>
-         if In1 = '0'then
-            nex <= A;
-         elsif In1 = '1' then
-            nex <= B;
-         end if;
+        if In1 = '1' then
+          nex <= B;
+        else
+          nex <= A;
+        end if;
       when B =>
-         if In1 = '1' then
-            nex <= B;
-         elsif In1 = '0' generate
-            nex <= C;
-         end if;
+        if In1 = '1' then
+          nex <= B;
+        else
+          nex <= C;
+        end if;
       when C =>
-         if In1 = '0' then
-            nex <= C;
-         elsif In1 = '1' then
-            nex <= A;
-         end if;
+        if In1 = '1' then
+          nex <= A;
+        else
+          nex <= C;
+        end if;
+    end case;
+      
    end process state_control;
    output_control : process (cur)
    begin
-      case(cur)
+      case cur is
          when A =>
             Out1 <= '0';
          when B =>
