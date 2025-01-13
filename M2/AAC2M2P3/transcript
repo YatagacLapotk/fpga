@@ -1,0 +1,28 @@
+# Compile of AAC2M2P3.vhd was successful.
+# Compile of AAC2M2P3_tb.vhdp was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.aac2m2p3_tb
+# vsim -gui work.aac2m2p3_tb 
+# Start time: 00:30:08 on Jan 12,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m2p3_tb(behavioral)
+# Loading work.fsm(fsm_arch)
+run -all
+# ** Note: OUTPUT SHOULD BE 1
+#    Time: 115 ns  Iteration: 0  Instance: /aac2m2p3_tb
+# ** Note: OUTPUT SHOULD BE 1
+#    Time: 135 ns  Iteration: 0  Instance: /aac2m2p3_tb
+# ** Note: OUTPUT SHOULD BE 1
+#    Time: 155 ns  Iteration: 0  Instance: /aac2m2p3_tb
+# ** Note: OUTPUT SHOULD BE 1
+#    Time: 175 ns  Iteration: 0  Instance: /aac2m2p3_tb
+# ** Note: This simulation is complete
+#    Time: 215 ns  Iteration: 0  Instance: /aac2m2p3_tb
+# End time: 00:31:00 on Jan 12,2025, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 6
