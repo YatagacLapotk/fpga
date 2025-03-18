@@ -1,23 +1,23 @@
-#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
-:ivl_version "12.0 (stable)";
+#! /Users/yatagaclapotk/Programs/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20250103-17-g30123f894)";
 :ivl_delay_selection "TYPICAL";
 :vpi_time_precision + 0;
-:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
-:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
-:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
-:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
-:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
-S_0x128606ec0 .scope module, "and_gate" "and_gate" 2 1;
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x130f05390 .scope module, "and_gate" "and_gate" 2 1;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "in1";
     .port_info 1 /INPUT 1 "in2";
     .port_info 2 /OUTPUT 1 "out1";
-o0x130040010 .functor BUFZ 1, C4<z>; HiZ drive
-o0x130040040 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x1286185b0 .functor AND 1, o0x130040010, o0x130040040, C4<1>, C4<1>;
-v0x128608490_0 .net "in1", 0 0, o0x130040010;  0 drivers
-v0x128618430_0 .net "in2", 0 0, o0x130040040;  0 drivers
-v0x1286184d0_0 .net "out1", 0 0, L_0x1286185b0;  1 drivers
+o0x138040010 .functor BUFZ 1, c4<z>; HiZ drive
+o0x138040040 .functor BUFZ 1, c4<z>; HiZ drive
+L_0x130f16e40 .functor AND 1, o0x138040010, o0x138040040, C4<1>, C4<1>;
+v0x130f05500_0 .net "in1", 0 0, o0x138040010;  0 drivers
+v0x130f16cc0_0 .net "in2", 0 0, o0x138040040;  0 drivers
+v0x130f16d60_0 .net "out1", 0 0, L_0x130f16e40;  1 drivers
 # The file index is used to find the file name in the following table.
 :file_names 3;
     "N/A";
