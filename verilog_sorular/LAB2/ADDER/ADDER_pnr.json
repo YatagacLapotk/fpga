@@ -1,0 +1,2791 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.7-145-gab7a3724)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": " ",
+        "arch.name": "ARCHNAME",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "27000000.000000",
+        "cst.filename": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/const.cst",
+        "packer.partno": "GW1NR-LV9QN88PC6/I5",
+        "packer.chipdb": "GW1N-9C",
+        "packer.arch": "himbaechel/gowin"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:1.1-11.10"
+      },
+      "ports": {
+        "led": {
+          "direction": "output",
+          "bits": [ 7772, 7770, 7768, 7766 ]
+        },
+        "Cout": {
+          "direction": "output",
+          "bits": [ 7599 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 7609, 7618, 7631, 7638 ]
+        },
+        "A": {
+          "direction": "input",
+          "bits": [ 7606, 7615, 7628, 7635 ]
+        }
+      },
+      "cells": {
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/GSR"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 7786 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 7786 ]
+          }
+        },
+        "led_OBUF_O_3": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y14/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7772 ],
+            "I": [ 7612 ]
+          }
+        },
+        "led_OBUF_O_2": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y15/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7770 ],
+            "I": [ 7621 ]
+          }
+        },
+        "led_OBUF_O_1": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y20/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7768 ],
+            "I": [ 7633 ]
+          }
+        },
+        "led_OBUF_O": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y21/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7766 ],
+            "I": [ 7706 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11111110"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/LUT1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7762 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/LUT0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7761 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/MUX0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7754 ],
+            "I1": [ 7762 ],
+            "I0": [ 7761 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111011111000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/LUT3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7757 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000100000111"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/LUT2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7756 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/MUX2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7753 ],
+            "I1": [ 7757 ],
+            "I0": [ 7756 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/MUX1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7607 ],
+            "O": [ 7738 ],
+            "I1": [ 7754 ],
+            "I0": [ 7753 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11001000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/LUT5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7749 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00110111"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/LUT4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7748 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/MUX4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7741 ],
+            "I1": [ 7749 ],
+            "I0": [ 7748 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1110000010000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/LUT7",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7744 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0001111101111111"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/LUT6",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7743 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/MUX6",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7740 ],
+            "I1": [ 7744 ],
+            "I0": [ 7743 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/MUX5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7607 ],
+            "O": [ 7737 ],
+            "I1": [ 7741 ],
+            "I0": [ 7740 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT7",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/MUX3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:166.14-166.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7629 ],
+            "O": [ 7705 ],
+            "I1": [ 7738 ],
+            "I0": [ 7737 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/LUT1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7733 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11111110"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/LUT0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7732 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/MUX0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7725 ],
+            "I1": [ 7733 ],
+            "I0": [ 7732 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000100000111"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/LUT3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7728 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111011111000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/LUT2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7727 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/MUX2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7724 ],
+            "I1": [ 7728 ],
+            "I0": [ 7727 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/MUX1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7607 ],
+            "O": [ 7709 ],
+            "I1": [ 7725 ],
+            "I0": [ 7724 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00110111"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/LUT5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7720 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11001000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/LUT4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7719 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/MUX4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7712 ],
+            "I1": [ 7720 ],
+            "I0": [ 7719 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0001111101111111"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/LUT7",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7715 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1110000010000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/LUT6",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7714 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/MUX6",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7711 ],
+            "I1": [ 7715 ],
+            "I0": [ 7714 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/MUX5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7607 ],
+            "O": [ 7708 ],
+            "I1": [ 7712 ],
+            "I0": [ 7711 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT7",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y21/MUX3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:166.14-166.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7629 ],
+            "O": [ 7704 ],
+            "I1": [ 7709 ],
+            "I0": [ 7708 ]
+          }
+        },
+        "a3.Y_MUX2_LUT8_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT8",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y21/MUX7",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:172.14-172.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7639 ],
+            "O": [ 7706 ],
+            "I1": [ 7705 ],
+            "I0": [ 7704 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "11"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/LUT1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7700 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11111110"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/LUT0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7699 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/MUX0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7692 ],
+            "I1": [ 7700 ],
+            "I0": [ 7699 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "11"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/LUT3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7695 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111011111000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/LUT2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7694 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/MUX2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7691 ],
+            "I1": [ 7695 ],
+            "I0": [ 7694 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/MUX1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7607 ],
+            "O": [ 7676 ],
+            "I1": [ 7692 ],
+            "I0": [ 7691 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "11"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/LUT5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7687 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11001000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/LUT4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7686 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/MUX4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7679 ],
+            "I1": [ 7687 ],
+            "I0": [ 7686 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "11"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/LUT7",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7682 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1110000010000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/LUT6",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7681 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/MUX6",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7678 ],
+            "I1": [ 7682 ],
+            "I0": [ 7681 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/MUX5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7607 ],
+            "O": [ 7675 ],
+            "I1": [ 7679 ],
+            "I0": [ 7678 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT7",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/MUX3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:166.14-166.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7629 ],
+            "O": [ 7642 ],
+            "I1": [ 7676 ],
+            "I0": [ 7675 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11111110"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/LUT1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7671 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/LUT0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7670 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/MUX0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7663 ],
+            "I1": [ 7671 ],
+            "I0": [ 7670 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111011111000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/LUT3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7666 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/LUT2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7665 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/MUX2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7662 ],
+            "I1": [ 7666 ],
+            "I0": [ 7665 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/MUX1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7607 ],
+            "O": [ 7645 ],
+            "I1": [ 7663 ],
+            "I0": [ 7662 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "11001000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/LUT5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7616 ],
+            "I1": [ 7624 ],
+            "I0": [ 7619 ],
+            "F": [ 7657 ]
+          }
+        },
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 7787 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/LUT4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7656 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/MUX4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7648 ],
+            "I1": [ 7657 ],
+            "I0": [ 7656 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1110000010000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/LUT7",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7651 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/LUT6",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7650 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/MUX6",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7636 ],
+            "O": [ 7647 ],
+            "I1": [ 7651 ],
+            "I0": [ 7650 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/MUX5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7607 ],
+            "O": [ 7644 ],
+            "I1": [ 7648 ],
+            "I0": [ 7647 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT7",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y22/MUX3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:166.14-166.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7629 ],
+            "O": [ 7641 ],
+            "I1": [ 7645 ],
+            "I0": [ 7644 ]
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT8",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y22/MUX7",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:172.14-172.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7639 ],
+            "O": [ 7603 ],
+            "I1": [ 7642 ],
+            "I0": [ 7641 ]
+          }
+        },
+        "a3.B_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X10Y28/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.19-2.20",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7639 ],
+            "I": [ 7638 ]
+          }
+        },
+        "a3.A_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X32Y28/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.17-2.18",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7636 ],
+            "I": [ 7635 ]
+          }
+        },
+        "a2.Y_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y20/MUX0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7629 ],
+            "O": [ 7633 ],
+            "I1": [ 7623 ],
+            "I0": [ 7626 ]
+          }
+        },
+        "a2.B_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X10Y28/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.19-2.20",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7624 ],
+            "I": [ 7631 ]
+          }
+        },
+        "a2.A_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X28Y28/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.17-2.18",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7629 ],
+            "I": [ 7628 ]
+          }
+        },
+        "a1.Y_LUT4_I0_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0010110110110100"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y20/LUT0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7621 ],
+            "F": [ 7626 ]
+          }
+        },
+        "a1.Y_LUT4_I0": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1101001001001011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y20/LUT1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7616 ],
+            "I2": [ 7624 ],
+            "I1": [ 7619 ],
+            "I0": [ 7621 ],
+            "F": [ 7623 ]
+          }
+        },
+        "a1.Y_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1100001110010110"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/LUT3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7607 ],
+            "I2": [ 7616 ],
+            "I1": [ 7619 ],
+            "I0": [ 7610 ],
+            "F": [ 7621 ]
+          }
+        },
+        "a1.B_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y4/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.19-2.20",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7619 ],
+            "I": [ 7618 ]
+          }
+        },
+        "a1.A_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X1Y0/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.17-2.18",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7616 ],
+            "I": [ 7615 ]
+          }
+        },
+        "a0.Y_LUT2_F": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y14/LUT0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:139.23-140.26",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I1": [ 7607 ],
+            "I0": [ 7610 ],
+            "F": [ 7612 ]
+          }
+        },
+        "a0.B_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X9Y0/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.19-2.20",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7610 ],
+            "I": [ 7609 ]
+          }
+        },
+        "a0.A_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X9Y0/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.17-2.18",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7607 ],
+            "I": [ 7606 ]
+          }
+        },
+        "Cout_OBUF_O": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y25/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:3.12-3.16",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7599 ],
+            "I": [ 7603 ]
+          }
+        }
+      },
+      "netnames": {
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 7786 ] ,
+          "attributes": {
+            "ROUTING": "X0Y0/VCC;;1;X0Y0/S220;X0Y0/S220/VCC;1;X0Y0/C4;X0Y0/C4/S220;1"
+          }
+        },
+        "led[0]": {
+          "hide_name": 0,
+          "bits": [ 7772 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:4.18-4.21"
+          }
+        },
+        "led[1]": {
+          "hide_name": 0,
+          "bits": [ 7770 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:4.18-4.21"
+          }
+        },
+        "led[2]": {
+          "hide_name": 0,
+          "bits": [ 7768 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:4.18-4.21"
+          }
+        },
+        "led[3]": {
+          "hide_name": 0,
+          "bits": [ 7766 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:4.18-4.21"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7762 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/F1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7761 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/F0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7757 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/F3;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7756 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/F2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7754 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7753 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7749 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/F5;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7748 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/F4;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7744 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/F7;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7743 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/F6;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7741 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF4;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7740 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF6;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7738 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:163.13-163.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7737 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF5;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:163.9-163.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7733 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/F1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7732 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/F0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7728 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/F3;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7727 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/F2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7725 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/OF0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7724 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/OF2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7720 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/F5;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7719 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/F4;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7715 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/F7;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7714 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/F6;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7712 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/OF4;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7711 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/OF6;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7709 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/OF1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:163.13-163.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7708 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/OF5;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:163.9-163.11"
+          }
+        },
+        "a3.Y": {
+          "hide_name": 0,
+          "bits": [ 7706 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF7;;1;X1Y21/W270;X1Y21/W270/OF7;1;X0Y21/X08;X0Y21/X08/W271;1;X0Y21/D1;X0Y21/D1/X08;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:15.12-15.13",
+            "hdlname": "a3 Y"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7705 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF3;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:169.13-169.15"
+          }
+        },
+        "a3.Y_MUX2_LUT8_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7704 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/OF30;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:169.9-169.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7700 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/F1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7699 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/F0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7695 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/F3;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7694 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/F2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7692 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/OF0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7691 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/OF2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7687 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/F5;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7686 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/F4;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7682 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/F7;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7681 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/F6;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7679 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/OF4;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7678 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/OF6;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7676 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/OF1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:163.13-163.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1_MUX2_LUT7_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7675 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/OF5;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:171.43-171.68|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:163.9-163.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7671 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/F1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7670 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/F0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7666 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/F3;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7665 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/F2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7663 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/OF0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7662 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/OF2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:165.42-165.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7657 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/F5;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7656 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/F4;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "bits": [ 7787 ] ,
+          "attributes": {
+            "ROUTING": " "
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7651 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/F7;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7650 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/F6;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7648 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/OF4;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7647 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/OF6;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:164.41-164.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7645 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/OF1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:163.13-163.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0_MUX2_LUT7_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7644 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/OF5;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:170.42-170.67|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:163.9-163.11"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7642 ] ,
+          "attributes": {
+            "ROUTING": "X1Y22/OF30;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:169.13-169.15"
+          }
+        },
+        "a3.Cout_MUX2_LUT8_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7641 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/OF30;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:169.9-169.11"
+          }
+        },
+        "a3.B": {
+          "hide_name": 0,
+          "bits": [ 7639 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/S250;X2Y21/S250/W838;1;X2Y22/X04;X2Y22/X04/S251;1;X2Y22/SEL7;X2Y22/SEL7/X04;1;X10Y28/Q6;;1;X10Y28/S830;X10Y28/S830/Q6;1;X10Y21/W830;X10Y21/W830/N838;1;X2Y21/W250;X2Y21/W250/W838;1;X1Y21/X04;X1Y21/X04/W251;1;X1Y21/SEL7;X1Y21/SEL7/X04;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:14.13-14.14",
+            "hdlname": "a3 B"
+          }
+        },
+        "B[3]": {
+          "hide_name": 0,
+          "bits": [ 7638 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.19-2.20"
+          }
+        },
+        "a3.A": {
+          "hide_name": 0,
+          "bits": [ 7636 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/SEL6;X1Y21/SEL6/E261;1;X2Y22/SEL4;X2Y22/SEL4/W262;1;X2Y22/SEL6;X2Y22/SEL6/W262;1;X3Y22/SEL0;X3Y22/SEL0/W261;1;X1Y21/SEL0;X1Y21/SEL0/E261;1;X2Y21/SEL6;X2Y21/SEL6/E262;1;X2Y21/SEL0;X2Y21/SEL0/E262;1;X3Y22/SEL4;X3Y22/SEL4/W261;1;X2Y22/SEL2;X2Y22/SEL2/W262;1;X2Y21/SEL2;X2Y21/SEL2/E262;1;X3Y22/SEL2;X3Y22/SEL2/W261;1;X2Y22/SEL0;X2Y22/SEL0/W262;1;X1Y21/SEL2;X1Y21/SEL2/E261;1;X4Y21/S260;X4Y21/S260/W834;1;X4Y22/W260;X4Y22/W260/S261;1;X3Y22/SEL6;X3Y22/SEL6/W261;1;X1Y21/SEL4;X1Y21/SEL4/E261;1;X32Y28/F6;;1;X32Y28/W830;X32Y28/W830/F6;1;X24Y28/W830;X24Y28/W830/W838;1;X16Y28/W830;X16Y28/W830/W838;1;X8Y28/S830;X8Y28/S830/W838;1;X8Y21/W830;X8Y21/W830/N838;1;X0Y21/E260;X0Y21/E260/W838;1;X2Y21/SEL4;X2Y21/SEL4/E262;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:14.11-14.12",
+            "hdlname": "a3 A"
+          }
+        },
+        "A[3]": {
+          "hide_name": 0,
+          "bits": [ 7635 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.17-2.18"
+          }
+        },
+        "a2.Y": {
+          "hide_name": 0,
+          "bits": [ 7633 ] ,
+          "attributes": {
+            "ROUTING": "X2Y20/OF0;;1;X2Y20/W200;X2Y20/W200/OF0;1;X0Y20/D1;X0Y20/D1/W202;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:15.12-15.13",
+            "hdlname": "a2 Y"
+          }
+        },
+        "B[2]": {
+          "hide_name": 0,
+          "bits": [ 7631 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.19-2.20"
+          }
+        },
+        "a2.A": {
+          "hide_name": 0,
+          "bits": [ 7629 ] ,
+          "attributes": {
+            "ROUTING": "X4Y21/S130;X4Y21/S130/N808;1;X4Y22/W230;X4Y22/W230/S131;1;X2Y22/X02;X2Y22/X02/W232;1;X2Y22/SEL3;X2Y22/SEL3/X02;1;X20Y28/W800;X20Y28/W800/W838;1;X12Y28/W810;X12Y28/W810/W808;1;X4Y28/W820;X4Y28/W820/W818;1;X0Y28/S820;X0Y28/S820/W824;1;X0Y21/W240;X0Y21/W240/N828;1;X1Y21/SEL3;X1Y21/SEL3/E242;1;X12Y28/W800;X12Y28/W800/W838;1;X4Y28/S800;X4Y28/S800/W808;1;X4Y21/W230;X4Y21/W230/N808;1;X2Y21/X02;X2Y21/X02/W232;1;X2Y21/SEL3;X2Y21/SEL3/X02;1;X28Y28/W830;X28Y28/W830/Q6;1;X20Y28/W830;X20Y28/W830/W838;1;X12Y28/N830;X12Y28/N830/W838;1;X12Y24/W830;X12Y24/W830/N834;1;X4Y24/W100;X4Y24/W100/W838;1;X3Y24/N240;X3Y24/N240/W101;1;X3Y22/SEL3;X3Y22/SEL3/N242;1;X28Y28/Q6;;1;X28Y28/N830;X28Y28/N830/Q6;1;X28Y20/W830;X28Y20/W830/N838;1;X20Y20/W830;X20Y20/W830/W838;1;X12Y20/W830;X12Y20/W830/W838;1;X4Y20/W260;X4Y20/W260/W838;1;X2Y20/SEL0;X2Y20/SEL0/W262;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:14.11-14.12",
+            "hdlname": "a2 A"
+          }
+        },
+        "A[2]": {
+          "hide_name": 0,
+          "bits": [ 7628 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.17-2.18"
+          }
+        },
+        "a2.Y_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7626 ] ,
+          "attributes": {
+            "ROUTING": "X2Y20/F0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "a2.B": {
+          "hide_name": 0,
+          "bits": [ 7624 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/B5;X3Y22/B5/E131;1;X1Y21/C6;X1Y21/C6/W261;1;X1Y21/B5;X1Y21/B5/X03;1;X2Y20/C1;X2Y20/C1/N261;1;X2Y22/B4;X2Y22/B4/S252;1;X2Y21/C7;X2Y21/C7/N130;1;X1Y21/X03;X1Y21/X03/W261;1;X1Y21/B4;X1Y21/B4/X03;1;X2Y21/N130;X2Y21/N130/N838;1;X2Y21/C6;X2Y21/C6/N130;1;X2Y22/S240;X2Y22/S240/S101;1;X2Y22/B0;X2Y22/B0/S240;1;X2Y22/E240;X2Y22/E240/S101;1;X3Y22/C7;X3Y22/C7/E241;1;X2Y21/B4;X2Y21/B4/S251;1;X2Y21/B0;X2Y21/B0/S100;1;X2Y28/E130;X2Y28/E130/W838;1;X3Y28/S830;X3Y28/S830/E131;1;X3Y21/S100;X3Y21/S100/N838;1;X3Y22/C3;X3Y22/C3/S101;1;X2Y21/B1;X2Y21/B1/S100;1;X2Y21/C3;X2Y21/C3/S101;1;X1Y21/C3;X1Y21/C3/W261;1;X2Y21/N260;X2Y21/N260/N838;1;X2Y20/C0;X2Y20/C0/N261;1;X2Y21/S100;X2Y21/S100/N838;1;X2Y22/C2;X2Y22/C2/S101;1;X1Y21/C7;X1Y21/C7/W261;1;X10Y28/N130;X10Y28/N130/F6;1;X10Y27/S830;X10Y27/S830/N131;1;X10Y22/W830;X10Y22/W830/N838;1;X2Y22/E130;X2Y22/E130/W838;1;X3Y22/B1;X3Y22/B1/E131;1;X2Y21/B5;X2Y21/B5/S251;1;X1Y21/B1;X1Y21/B1/X07;1;X2Y20/S250;X2Y20/S250/N838;1;X2Y22/X08;X2Y22/X08/S252;1;X2Y22/C6;X2Y22/C6/X08;1;X1Y21/X07;X1Y21/X07/W261;1;X1Y21/B0;X1Y21/B0/X07;1;X2Y28/S830;X2Y28/S830/W838;1;X2Y21/W260;X2Y21/W260/N838;1;X1Y21/C2;X1Y21/C2/W261;1;X10Y28/F6;;1;X10Y28/W830;X10Y28/W830/F6;1;X2Y28/N830;X2Y28/N830/W838;1;X2Y20/S100;X2Y20/S100/N838;1;X2Y21/C2;X2Y21/C2/S101;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:14.13-14.14",
+            "hdlname": "a2 B"
+          }
+        },
+        "a2.Y_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7623 ] ,
+          "attributes": {
+            "ROUTING": "X2Y20/F1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "a1.Y": {
+          "hide_name": 0,
+          "bits": [ 7621 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/EW20;X1Y15/EW20/F3;1;X0Y15/D1;X0Y15/D1/W121;1;X2Y20/A0;X2Y20/A0/E271;1;X1Y15/F3;;1;X1Y15/SN20;X1Y15/SN20/F3;1;X1Y16/S820;X1Y16/S820/S121;1;X1Y20/E270;X1Y20/E270/S824;1;X2Y20/A1;X2Y20/A1/E271;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:15.12-15.13",
+            "hdlname": "a1 Y"
+          }
+        },
+        "a1.B": {
+          "hide_name": 0,
+          "bits": [ 7619 ] ,
+          "attributes": {
+            "ROUTING": "X2Y21/A5;X2Y21/A5/E272;1;X2Y21/B2;X2Y21/B2/E232;1;X2Y21/B3;X2Y21/B3/E232;1;X0Y20/S230;X0Y20/S230/S808;1;X0Y22/E230;X0Y22/E230/S232;1;X2Y22/B6;X2Y22/B6/E232;1;X1Y21/B7;X1Y21/B7/E231;1;X1Y21/A5;X1Y21/A5/E272;1;X2Y21/B6;X2Y21/B6/E232;1;X1Y21/B6;X1Y21/B6/E231;1;X0Y20/S250;X0Y20/S250/S838;1;X0Y22/E250;X0Y22/E250/S252;1;X2Y22/A0;X2Y22/A0/E252;1;X2Y21/B7;X2Y21/B7/E232;1;X1Y21/B2;X1Y21/B2/E231;1;X2Y22/B2;X2Y22/B2/S232;1;X2Y20/S230;X2Y20/S230/E232;1;X2Y22/A4;X2Y22/A4/S232;1;X0Y4/EW10;X0Y4/EW10/F6;1;X1Y4/S810;X1Y4/S810/E111;1;X1Y12/S130;X1Y12/S130/S818;1;X1Y13/S230;X1Y13/S230/S131;1;X1Y15/B3;X1Y15/B3/S232;1;X1Y21/A4;X1Y21/A4/E271;1;X1Y21/A0;X1Y21/A0/E272;1;X2Y21/A1;X2Y21/A1/E272;1;X2Y21/A4;X2Y21/A4/E272;1;X0Y21/E270;X0Y21/E270/S131;1;X2Y21/A0;X2Y21/A0/E272;1;X3Y22/B3;X3Y22/B3/S232;1;X0Y20/W800;X0Y20/W800/S808;1;X3Y20/S230;X3Y20/S230/E804;1;X3Y22/A5;X3Y22/A5/S232;1;X3Y22/B7;X3Y22/B7/S252;1;X0Y12/S830;X0Y12/S830/S838;1;X0Y20/W830;X0Y20/W830/S838;1;X3Y20/S250;X3Y20/S250/E834;1;X3Y22/A1;X3Y22/A1/S252;1;X2Y20/B0;X2Y20/B0/E232;1;X0Y20/E230;X0Y20/E230/S808;1;X2Y20/B1;X2Y20/B1/E232;1;X0Y21/W270;X0Y21/W270/S131;1;X1Y21/A1;X1Y21/A1/E272;1;X0Y4/F6;;1;X0Y4/S830;X0Y4/S830/F6;1;X0Y12/S800;X0Y12/S800/S838;1;X0Y20/S130;X0Y20/S130/S808;1;X0Y21/E230;X0Y21/E230/S131;1;X1Y21/B3;X1Y21/B3/E231;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:14.13-14.14",
+            "hdlname": "a1 B"
+          }
+        },
+        "B[1]": {
+          "hide_name": 0,
+          "bits": [ 7618 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.19-2.20"
+          }
+        },
+        "a1.A": {
+          "hide_name": 0,
+          "bits": [ 7616 ] ,
+          "attributes": {
+            "ROUTING": "X3Y22/D3;X3Y22/D3/E202;1;X1Y21/C1;X1Y21/C1/N262;1;X2Y21/D7;X2Y21/D7/E201;1;X2Y22/C0;X2Y22/C0/E241;1;X1Y21/C5;X1Y21/C5/N202;1;X1Y21/D7;X1Y21/D7/N262;1;X2Y21/C0;X2Y21/C0/E261;1;X2Y21/D3;X2Y21/D3/E201;1;X2Y21/D6;X2Y21/D6/E201;1;X2Y21/C1;X2Y21/C1/E261;1;X3Y22/D7;X3Y22/D7/E202;1;X2Y21/C5;X2Y21/C5/E261;1;X3Y22/C5;X3Y22/C5/E242;1;X2Y22/D2;X2Y22/D2/E201;1;X1Y16/N260;X1Y16/N260/S838;1;X1Y15/C3;X1Y15/C3/N261;1;X2Y22/C4;X2Y22/C4/E241;1;X1Y16/S130;X1Y16/S130/S808;1;X1Y17/S830;X1Y17/S830/S131;1;X1Y21/E260;X1Y21/E260/S834;1;X2Y21/C4;X2Y21/C4/E261;1;X1Y21/D2;X1Y21/D2/N202;1;X1Y8/S830;X1Y8/S830/S838;1;X1Y16/S100;X1Y16/S100/S838;1;X1Y17/S800;X1Y17/S800/S101;1;X1Y21/E200;X1Y21/E200/S804;1;X2Y21/D2;X2Y21/D2/E201;1;X1Y21/C4;X1Y21/C4/N202;1;X1Y21/C0;X1Y21/C0/N262;1;X1Y22/E240;X1Y22/E240/N101;1;X3Y22/C1;X3Y22/C1/E242;1;X1Y23/N100;X1Y23/N100/S808;1;X1Y22/E200;X1Y22/E200/N101;1;X2Y22/D6;X2Y22/D6/E201;1;X1Y15/S800;X1Y15/S800/S838;1;X1Y23/N200;X1Y23/N200/S808;1;X1Y21/D3;X1Y21/D3/N202;1;X1Y0/N830;X1Y0/N830/F6;1;X1Y7/S830;X1Y7/S830/S838;1;X1Y15/S830;X1Y15/S830/S838;1;X1Y23/N260;X1Y23/N260/S838;1;X1Y21/D6;X1Y21/D6/N262;1;X2Y20/D1;X2Y20/D1/E221;1;X1Y0/F6;;1;X1Y0/S830;X1Y0/S830/F6;1;X1Y8/S800;X1Y8/S800/S838;1;X1Y16/S810;X1Y16/S810/S808;1;X1Y20/E220;X1Y20/E220/S814;1;X2Y20/D0;X2Y20/D0/E221;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:14.11-14.12",
+            "hdlname": "a1 A"
+          }
+        },
+        "A[1]": {
+          "hide_name": 0,
+          "bits": [ 7615 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.17-2.18"
+          }
+        },
+        "a0.Y": {
+          "hide_name": 0,
+          "bits": [ 7612 ] ,
+          "attributes": {
+            "ROUTING": "X1Y14/F0;;1;X1Y14/W130;X1Y14/W130/F0;1;X0Y14/A0;X0Y14/A0/W131;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:15.12-15.13",
+            "hdlname": "a0 Y"
+          }
+        },
+        "a0.B": {
+          "hide_name": 0,
+          "bits": [ 7610 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/A6;X1Y21/A6/N232;1;X2Y21/A2;X2Y21/A2/N272;1;X3Y22/A7;X3Y22/A7/W272;1;X2Y21/A3;X2Y21/A3/N272;1;X9Y7/S800;X9Y7/S800/S838;1;X9Y15/W800;X9Y15/W800/S808;1;X1Y15/E200;X1Y15/E200/W808;1;X1Y15/A3;X1Y15/A3/E200;1;X1Y21/A2;X1Y21/A2/N252;1;X2Y21/A6;X2Y21/A6/N232;1;X2Y23/N270;X2Y23/N270/E131;1;X2Y22/A2;X2Y22/A2/N271;1;X9Y15/S800;X9Y15/S800/S838;1;X9Y23/W800;X9Y23/W800/S808;1;X1Y23/N230;X1Y23/N230/W808;1;X1Y21/A7;X1Y21/A7/N232;1;X2Y21/A7;X2Y21/A7/N232;1;X1Y23/N250;X1Y23/N250/W838;1;X1Y21/A3;X1Y21/A3/N252;1;X5Y22/W270;X5Y22/W270/N131;1;X3Y22/A3;X3Y22/A3/W272;1;X1Y15/N250;X1Y15/N250/W838;1;X1Y14/A0;X1Y14/A0/N251;1;X9Y15/S830;X9Y15/S830/S838;1;X9Y23/W830;X9Y23/W830/S838;1;X1Y23/E130;X1Y23/E130/W838;1;X2Y23/N230;X2Y23/N230/E131;1;X2Y22/A6;X2Y22/A6/N231;1;X9Y0/N830;X9Y0/N830/Q6;1;X9Y7/S830;X9Y7/S830/S838;1;X9Y15/W830;X9Y15/W830/S838;1;X9Y0/Q6;;1;X5Y15/S830;X5Y15/S830/W834;1;X5Y23/N130;X5Y23/N130/S838;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:14.13-14.14",
+            "hdlname": "a0 B"
+          }
+        },
+        "B[0]": {
+          "hide_name": 0,
+          "bits": [ 7609 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.19-2.20"
+          }
+        },
+        "a0.A": {
+          "hide_name": 0,
+          "bits": [ 7607 ] ,
+          "attributes": {
+            "ROUTING": "X1Y21/SEL5;X1Y21/SEL5/S261;1;X3Y22/SEL1;X3Y22/SEL1/S262;1;X9Y16/W800;X9Y16/W800/S808;1;X1Y16/N200;X1Y16/N200/W808;1;X1Y15/D3;X1Y15/D3/N201;1;X2Y21/SEL5;X2Y21/SEL5/S261;1;X9Y8/S800;X9Y8/S800/S838;1;X9Y12/W800;X9Y12/W800/S804;1;X1Y12/S230;X1Y12/S230/W808;1;X1Y14/B0;X1Y14/B0/S232;1;X2Y22/SEL5;X2Y22/SEL5/S262;1;X2Y22/SEL1;X2Y22/SEL1/S262;1;X2Y20/S260;X2Y20/S260/E261;1;X2Y21/SEL1;X2Y21/SEL1/S261;1;X1Y20/E260;X1Y20/E260/W838;1;X3Y20/S260;X3Y20/S260/E262;1;X3Y22/SEL5;X3Y22/SEL5/S262;1;X9Y0/F6;;1;X9Y0/S830;X9Y0/S830/F6;1;X9Y8/S830;X9Y8/S830/S838;1;X9Y16/S830;X9Y16/S830/S838;1;X9Y20/W830;X9Y20/W830/S834;1;X1Y20/S260;X1Y20/S260/W838;1;X1Y21/SEL1;X1Y21/SEL1/S261;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:14.11-14.12",
+            "hdlname": "a0 A"
+          }
+        },
+        "A[0]": {
+          "hide_name": 0,
+          "bits": [ 7606 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:2.17-2.18"
+          }
+        },
+        "Cout": {
+          "hide_name": 0,
+          "bits": [ 7599 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:3.12-3.16"
+          }
+        },
+        "a3.Cout": {
+          "hide_name": 0,
+          "bits": [ 7603 ] ,
+          "attributes": {
+            "ROUTING": "X2Y22/OF7;;1;X2Y22/SN20;X2Y22/SN20/OF7;1;X2Y23/S220;X2Y23/S220/S121;1;X2Y25/W220;X2Y25/W220/S222;1;X0Y25/D1;X0Y25/D1/W222;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v:15.14-15.18",
+            "hdlname": "a3 Cout"
+          }
+        }
+      }
+    }
+  }
+}

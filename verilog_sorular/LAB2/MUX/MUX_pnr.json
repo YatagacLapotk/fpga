@@ -1,0 +1,623 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.7-145-gab7a3724)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": " ",
+        "arch.name": "ARCHNAME",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "27000000.000000",
+        "cst.filename": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/cons.cst",
+        "packer.partno": "GW1NR-LV9QN88PC6/I5",
+        "packer.chipdb": "GW1N-9C",
+        "packer.arch": "himbaechel/gowin"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:1.1-11.10"
+      },
+      "ports": {
+        "s": {
+          "direction": "input",
+          "bits": [ 7611, 7636 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 993 ]
+        },
+        "A": {
+          "direction": "input",
+          "bits": [ 7608, 7605, 7632, 7630 ]
+        }
+      },
+      "cells": {
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/GSR"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 7648 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 7648 ]
+          }
+        },
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 7649 ]
+          }
+        },
+        "m3.s_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y4/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:3.17-3.18",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7624 ],
+            "I": [ 7636 ]
+          }
+        },
+        "m3.Y_MUX2_LUT6_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT6",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y15/MUX1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:160.14-160.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7633 ],
+            "O": [ 7602 ],
+            "I1": [ 7617 ],
+            "I0": [ 7622 ]
+          }
+        },
+        "m2.A_IBUF_O_1": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X32Y28/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:2.17-2.18",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7633 ],
+            "I": [ 7632 ]
+          }
+        },
+        "m2.A_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X7Y28/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:2.17-2.18",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7626 ],
+            "I": [ 7630 ]
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_I1_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "10101100"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y15/LUT1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7624 ],
+            "I1": [ 7606 ],
+            "I0": [ 7626 ],
+            "F": [ 7616 ]
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_I0_LUT2_F": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1110"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y15/LUT0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I1": [ 7609 ],
+            "I0": [ 7624 ],
+            "F": [ 7615 ]
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_1_I1_LUT3_F": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "10101100"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y15/LUT3",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:153.41-153.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I2": [ 7624 ],
+            "I1": [ 7606 ],
+            "I0": [ 7626 ],
+            "F": [ 7621 ]
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_1_I0_LUT2_F": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0100"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y15/LUT2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:152.41-152.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I1": [ 7609 ],
+            "I0": [ 7624 ],
+            "F": [ 7620 ]
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_1": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y15/MUX2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7613 ],
+            "O": [ 7622 ],
+            "I1": [ 7621 ],
+            "I0": [ 7620 ]
+          }
+        },
+        "m1.s_MUX2_LUT5_S0": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X7Y15/MUX0",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7613 ],
+            "O": [ 7617 ],
+            "I1": [ 7616 ],
+            "I0": [ 7615 ]
+          }
+        },
+        "m1.s_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X1Y0/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:3.17-3.18",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7613 ],
+            "I": [ 7611 ]
+          }
+        },
+        "m1.A_IBUF_O_1": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X30Y28/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:2.17-2.18",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7609 ],
+            "I": [ 7608 ]
+          }
+        },
+        "m1.A_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X28Y28/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:2.17-2.18",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7606 ],
+            "I": [ 7605 ]
+          }
+        },
+        "Y_OBUF_O": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y14/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:4.12-4.13",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 993 ],
+            "I": [ 7602 ]
+          }
+        }
+      },
+      "netnames": {
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "bits": [ 7649 ] ,
+          "attributes": {
+            "ROUTING": " "
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 7648 ] ,
+          "attributes": {
+            "ROUTING": "X0Y0/VCC;;1;X0Y0/N200;X0Y0/N200/VCC;1;X0Y0/C4;X0Y0/C4/S201;1"
+          }
+        },
+        "s[1]": {
+          "hide_name": 0,
+          "bits": [ 7636 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:3.17-3.18"
+          }
+        },
+        "m2.A[0]": {
+          "hide_name": 0,
+          "bits": [ 7633 ] ,
+          "attributes": {
+            "ROUTING": "X32Y28/F6;;1;X32Y28/W830;X32Y28/W830/F6;1;X24Y28/W800;X24Y28/W800/W838;1;X16Y28/N800;X16Y28/N800/W808;1;X16Y24/W800;X16Y24/W800/N804;1;X8Y24/W130;X8Y24/W130/W808;1;X7Y24/N830;X7Y24/N830/W131;1;X7Y16/N260;X7Y16/N260/N838;1;X7Y15/SEL1;X7Y15/SEL1/N261;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:14.17-14.18",
+            "hdlname": "m2 A"
+          }
+        },
+        "A[2]": {
+          "hide_name": 0,
+          "bits": [ 7632 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:2.17-2.18"
+          }
+        },
+        "A[3]": {
+          "hide_name": 0,
+          "bits": [ 7630 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:2.17-2.18"
+          }
+        },
+        "m2.A[1]": {
+          "hide_name": 0,
+          "bits": [ 7626 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/A1;X7Y15/A1/S252;1;X7Y28/F6;;1;X7Y28/S830;X7Y28/S830/F6;1;X7Y21/N830;X7Y21/N830/N838;1;X7Y13/S250;X7Y13/S250/N838;1;X7Y15/A3;X7Y15/A3/S252;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:14.17-14.18",
+            "hdlname": "m2 A"
+          }
+        },
+        "m3.s": {
+          "hide_name": 0,
+          "bits": [ 7624 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/C3;X7Y15/C3/S261;1;X7Y14/S260;X7Y14/S260/S262;1;X7Y15/C1;X7Y15/C1/S261;1;X7Y15/A0;X7Y15/A0/S271;1;X0Y4/F6;;1;X0Y4/S830;X0Y4/S830/F6;1;X0Y12/W830;X0Y12/W830/S838;1;X7Y12/S260;X7Y12/S260/E838;1;X7Y14/S270;X7Y14/S270/S262;1;X7Y15/A2;X7Y15/A2/S271;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:15.11-15.12",
+            "hdlname": "m3 s"
+          }
+        },
+        "m3.Y_MUX2_LUT6_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7622 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/OF2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.9-157.11"
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_1_I1": {
+          "hide_name": 0,
+          "bits": [ 7621 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/F3;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_1_I0": {
+          "hide_name": 0,
+          "bits": [ 7620 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/F2;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:158.41-158.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "m3.Y_MUX2_LUT6_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7617 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/OF0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:157.13-157.15"
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_I1": {
+          "hide_name": 0,
+          "bits": [ 7616 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/F1;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "m1.s_MUX2_LUT5_S0_I0": {
+          "hide_name": 0,
+          "bits": [ 7615 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/F0;;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:159.41-159.66|/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "m1.s": {
+          "hide_name": 0,
+          "bits": [ 7613 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/SEL0;X7Y15/SEL0/E261;1;X1Y0/F6;;1;X1Y0/N830;X1Y0/N830/F6;1;X1Y7/S830;X1Y7/S830/S838;1;X1Y15/W830;X1Y15/W830/S838;1;X6Y15/E260;X6Y15/E260/E838;1;X7Y15/SEL2;X7Y15/SEL2/E261;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:15.11-15.12",
+            "hdlname": "m2 s"
+          }
+        },
+        "s[0]": {
+          "hide_name": 0,
+          "bits": [ 7611 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:3.17-3.18"
+          }
+        },
+        "m1.A[0]": {
+          "hide_name": 0,
+          "bits": [ 7609 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/B2;X7Y15/B2/E131;1;X30Y28/F6;;1;X30Y28/W830;X30Y28/W830/F6;1;X22Y28/W830;X22Y28/W830/W838;1;X14Y28/N830;X14Y28/N830/W838;1;X14Y20/N130;X14Y20/N130/N838;1;X14Y19/N830;X14Y19/N830/N131;1;X14Y15/W830;X14Y15/W830/N834;1;X6Y15/E130;X6Y15/E130/W838;1;X7Y15/B0;X7Y15/B0/E131;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:14.17-14.18",
+            "hdlname": "m1 A"
+          }
+        },
+        "A[0]": {
+          "hide_name": 0,
+          "bits": [ 7608 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:2.17-2.18"
+          }
+        },
+        "m1.A[1]": {
+          "hide_name": 0,
+          "bits": [ 7606 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/B3;X7Y15/B3/N131;1;X28Y28/Q6;;1;X28Y28/EW20;X28Y28/EW20/Q6;1;X27Y28/W820;X27Y28/W820/W121;1;X19Y28/W820;X19Y28/W820/W828;1;X11Y28/N820;X11Y28/N820/W828;1;X11Y24/W820;X11Y24/W820/N824;1;X7Y24/N820;X7Y24/N820/W824;1;X7Y16/N130;X7Y16/N130/N828;1;X7Y15/B1;X7Y15/B1/N131;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:14.17-14.18",
+            "hdlname": "m1 A"
+          }
+        },
+        "A[1]": {
+          "hide_name": 0,
+          "bits": [ 7605 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:2.17-2.18"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 993 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:4.12-4.13"
+          }
+        },
+        "m3.Y": {
+          "hide_name": 0,
+          "bits": [ 7602 ] ,
+          "attributes": {
+            "ROUTING": "X7Y15/OF1;;1;X7Y15/SN10;X7Y15/SN10/OF1;1;X7Y14/W810;X7Y14/W810/N111;1;X0Y14/E210;X0Y14/E210/E818;1;X0Y14/A0;X0Y14/A0/E210;1",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/MUX/MUX.v:16.12-16.13",
+            "hdlname": "m3 Y"
+          }
+        }
+      }
+    }
+  }
+}

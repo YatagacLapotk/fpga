@@ -1,0 +1,446 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.7-145-gab7a3724)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": " ",
+        "arch.name": "ARCHNAME",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "27000000.000000",
+        "cst.filename": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/const.cst",
+        "packer.partno": "GW1NR-LV9QN88PC6/I5",
+        "packer.chipdb": "GW1N-9C",
+        "packer.arch": "himbaechel/gowin"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:1.1-11.10"
+      },
+      "ports": {
+        "led": {
+          "direction": "output",
+          "bits": [ 7624, 7622, 7620, 7618 ]
+        },
+        "btn": {
+          "direction": "input",
+          "bits": [ 7606, 7602 ]
+        }
+      },
+      "cells": {
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/GSR"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 7635 ]
+          }
+        },
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 7636 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 7635 ]
+          }
+        },
+        "led_OBUF_O_3": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y14/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:3.18-3.21",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7624 ],
+            "I": [ 7609 ]
+          }
+        },
+        "led_OBUF_O_2": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y15/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:3.18-3.21",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7622 ],
+            "I": [ 7612 ]
+          }
+        },
+        "led_OBUF_O_1": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y20/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:3.18-3.21",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7620 ],
+            "I": [ 7614 ]
+          }
+        },
+        "led_OBUF_O": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y21/IOBB",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:3.18-3.21",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7618 ],
+            "I": [ 7616 ]
+          }
+        },
+        "btn_IBUF_I_O_LUT2_I0_3": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0111"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y20/LUT4",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:139.23-140.26",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I1": [ 7607 ],
+            "I0": [ 7603 ],
+            "F": [ 7616 ]
+          }
+        },
+        "btn_IBUF_I_O_LUT2_I0_2": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1101"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y20/LUT1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:139.23-140.26",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I1": [ 7607 ],
+            "I0": [ 7603 ],
+            "F": [ 7614 ]
+          }
+        },
+        "btn_IBUF_I_O_LUT2_I0_1": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1011"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/LUT2",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:139.23-140.26",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I1": [ 7607 ],
+            "I0": [ 7603 ],
+            "F": [ 7612 ]
+          }
+        },
+        "btn_IBUF_I_O_LUT2_I0": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1110"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y14/LUT5",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:139.23-140.26",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I1": [ 7607 ],
+            "I0": [ 7603 ],
+            "F": [ 7609 ]
+          }
+        },
+        "btn_IBUF_I_1": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X1Y0/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:2.17-2.20",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7607 ],
+            "I": [ 7606 ]
+          }
+        },
+        "btn_IBUF_I": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y4/IOBA",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:2.17-2.20",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7603 ],
+            "I": [ 7602 ]
+          }
+        }
+      },
+      "netnames": {
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "bits": [ 7636 ] ,
+          "attributes": {
+            "ROUTING": " "
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 7635 ] ,
+          "attributes": {
+            "ROUTING": "X0Y0/VCC;;1;X0Y0/W260;X0Y0/W260/VCC;1;X0Y0/C4;X0Y0/C4/E261;1"
+          }
+        },
+        "led[0]": {
+          "hide_name": 0,
+          "bits": [ 7624 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:3.18-3.21"
+          }
+        },
+        "led[1]": {
+          "hide_name": 0,
+          "bits": [ 7622 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:3.18-3.21"
+          }
+        },
+        "led[2]": {
+          "hide_name": 0,
+          "bits": [ 7620 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:3.18-3.21"
+          }
+        },
+        "led[3]": {
+          "hide_name": 0,
+          "bits": [ 7618 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:3.18-3.21"
+          }
+        },
+        "led_OBUF_O_I[3]": {
+          "hide_name": 0,
+          "bits": [ 7616 ] ,
+          "attributes": {
+            "ROUTING": "X1Y20/F4;;1;X1Y20/SN20;X1Y20/SN20/F4;1;X1Y21/W220;X1Y21/W220/S121;1;X0Y21/D1;X0Y21/D1/W221;1"
+          }
+        },
+        "led_OBUF_O_I[2]": {
+          "hide_name": 0,
+          "bits": [ 7614 ] ,
+          "attributes": {
+            "ROUTING": "X1Y20/F1;;1;X1Y20/EW20;X1Y20/EW20/F1;1;X0Y20/D1;X0Y20/D1/W121;1"
+          }
+        },
+        "led_OBUF_O_I[1]": {
+          "hide_name": 0,
+          "bits": [ 7612 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/F2;;1;X1Y15/EW20;X1Y15/EW20/F2;1;X0Y15/D1;X0Y15/D1/W121;1"
+          }
+        },
+        "led_OBUF_O_I[0]": {
+          "hide_name": 0,
+          "bits": [ 7609 ] ,
+          "attributes": {
+            "ROUTING": "X1Y14/F5;;1;X1Y14/W130;X1Y14/W130/F5;1;X0Y14/A0;X0Y14/A0/W131;1"
+          }
+        },
+        "btn_IBUF_I_O[1]": {
+          "hide_name": 0,
+          "bits": [ 7607 ] ,
+          "attributes": {
+            "ROUTING": "X1Y8/S800;X1Y8/S800/S838;1;X1Y16/S200;X1Y16/S200/S808;1;X1Y18/S210;X1Y18/S210/S202;1;X1Y20/B1;X1Y20/B1/S212;1;X1Y16/N250;X1Y16/N250/S838;1;X1Y14/B5;X1Y14/B5/N252;1;X1Y16/N130;X1Y16/N130/S838;1;X1Y15/B2;X1Y15/B2/N131;1;X1Y0/F6;;1;X1Y0/S830;X1Y0/S830/F6;1;X1Y8/S830;X1Y8/S830/S838;1;X1Y16/S250;X1Y16/S250/S838;1;X1Y18/S250;X1Y18/S250/S252;1;X1Y20/B4;X1Y20/B4/S252;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "btn[0]": {
+          "hide_name": 0,
+          "bits": [ 7606 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:2.17-2.20"
+          }
+        },
+        "btn_IBUF_I_O[0]": {
+          "hide_name": 0,
+          "bits": [ 7603 ] ,
+          "attributes": {
+            "ROUTING": "X0Y4/SN20;X0Y4/SN20/F6;1;X0Y5/S820;X0Y5/S820/S121;1;X0Y13/S270;X0Y13/S270/S828;1;X0Y15/W270;X0Y15/W270/S272;1;X1Y15/A2;X1Y15/A2/E272;1;X1Y20/A4;X1Y20/A4/E252;1;X0Y12/S250;X0Y12/S250/S838;1;X0Y14/E250;X0Y14/E250/S252;1;X1Y14/A5;X1Y14/A5/E251;1;X0Y4/F6;;1;X0Y4/S830;X0Y4/S830/F6;1;X0Y12/S830;X0Y12/S830/S838;1;X0Y20/W250;X0Y20/W250/S838;1;X1Y20/A1;X1Y20/A1/E252;1",
+            "src": "/Users/yatagaclapotk/Programs/oss-cad-suite/libexec/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "btn[1]": {
+          "hide_name": 0,
+          "bits": [ 7602 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/DECODER/DECODER.v:2.17-2.20"
+          }
+        }
+      }
+    }
+  }
+}
