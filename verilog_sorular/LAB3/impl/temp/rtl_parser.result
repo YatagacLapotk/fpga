@@ -1,0 +1,62 @@
+[
+ {
+  "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+    "InstLine" : 7,
+    "InstName" : "fba",
+    "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+    "ModuleLine" : 39,
+    "ModuleName" : "FourbitAdder",
+    "SubInsts" : [
+     {
+      "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+      "InstLine" : 45,
+      "InstName" : "a0",
+      "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+      "ModuleLine" : 51,
+      "ModuleName" : "OnebitAdder"
+     },
+     {
+      "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+      "InstLine" : 46,
+      "InstName" : "a1",
+      "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+      "ModuleLine" : 51,
+      "ModuleName" : "OnebitAdder"
+     },
+     {
+      "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+      "InstLine" : 47,
+      "InstName" : "a2",
+      "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+      "ModuleLine" : 51,
+      "ModuleName" : "OnebitAdder"
+     },
+     {
+      "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+      "InstLine" : 48,
+      "InstName" : "a3",
+      "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+      "ModuleLine" : 51,
+      "ModuleName" : "OnebitAdder"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+    "InstLine" : 8,
+    "InstName" : "sseg",
+    "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB3/src/sevensegment.v",
+    "ModuleLine" : 12,
+    "ModuleName" : "sevensegment"
+   }
+  ]
+ }
+]
