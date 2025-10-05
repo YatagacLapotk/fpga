@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Lut="127" T_Register="115(0)" T_Alu="16(0)" T_Lut="383(127)" T_Bsram="4(0)">
+ <SubModule name="CU_unit" Register="14" Lut="46" T_Register="18(14)" T_Lut="50(46)">
+  <SubModule name="sctimer" Register="4" Lut="4" T_Register="4(4)" T_Lut="4(4)"/>
+ </SubModule>
+ <SubModule name="ALU_unit" Alu="16" Lut="10" T_Alu="16(16)" T_Lut="10(10)"/>
+ <SubModule name="MEMORY_unit" Bsram="4" T_Bsram="4(4)"/>
+ <SubModule name="AR" Register="12" T_Register="12(12)"/>
+ <SubModule name="PC" Register="12" Lut="41" T_Register="12(12)" T_Lut="41(41)"/>
+ <SubModule name="IR" Register="16" T_Register="16(16)"/>
+ <SubModule name="DR" Register="16" Lut="34" T_Register="16(16)" T_Lut="34(34)"/>
+ <SubModule name="AC" Register="16" Lut="117" T_Register="16(16)" T_Lut="117(117)"/>
+ <SubModule name="TR" Register="16" T_Register="16(16)"/>
+ <SubModule name="OUTR" Register="9" Lut="4" T_Register="9(9)" T_Lut="4(4)"/>
+</Module>

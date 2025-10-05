@@ -1,0 +1,49 @@
+{
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/ALU.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/CU.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/Inputr.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/RAM.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/SC.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/Outr.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/CPU.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/REG\u0130STER12.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/REGISTER16.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

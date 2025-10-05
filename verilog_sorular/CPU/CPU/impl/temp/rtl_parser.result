@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/CU.v",
+  "InstLine" : 1,
+  "InstName" : "CU",
+  "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/CU.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "CU",
+  "SubInsts" : [
+   {
+    "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/CU.v",
+    "InstLine" : 34,
+    "InstName" : "sctimer",
+    "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/CPU/src/SC.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "SC"
+   }
+  ]
+ }
+]

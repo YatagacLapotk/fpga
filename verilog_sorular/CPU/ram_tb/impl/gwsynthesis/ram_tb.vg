@@ -1,0 +1,34 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.11.01 Education"
+//Mon Sep  1 14:50:46 2025
+
+//Source file index table:
+//file0 "\/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/src/RAM.v"
+//file1 "\/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/src/RAM_tb.v"
+`pragma protect begin_protected
+`pragma protect version="2.3"
+`pragma protect author="default"
+`pragma protect author_info="default"
+`pragma protect encrypt_agent="GOWIN"
+`pragma protect encrypt_agent_info="GOWIN Encrypt Version 2.3"
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=256)
+`pragma protect key_keyowner="GOWIN",key_keyname="GWK2023-09",key_method="rsa"
+`pragma protect key_block
+uTxBsMQH36yiqiDsuMmldD2vI9m3IZDKBfcz9YShFxbsrFfO+6pchaIJIo87z5JpvAG6PMsMJKwT
+eRWy/DiZtA32uVaXbgBlf1mJg01qs7KZOS3Tbj6cbuh3jJX7R2/H9TTGLyrAMEtxfxQ/iYA+hzRX
+EX93o6HGLxqFNLzWi3i2ukcJO1GmXLI1vrnqC966qnFfIIlV3t3R6uqAtk73h6a1wCYOEEwnDdvc
+S/VSJTHkMdc+Y2hjeAOlIU1HKXi26PFLoaZR9LOI6+c3A84KVWBpAga3YQcHqY9/5P6+ipUX0dYf
+tuvs6K3Tp9bAMCT0QbKMvMJd3kj5Bcn6YJtDrA==
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=208)
+`pragma protect data_keyowner="default-ip-vendor"
+`pragma protect data_keyname="default-ip-key"
+`pragma protect data_method="aes128-cfb"
+`pragma protect data_block
+6OVjsQfKFnIBi9+ZBkZYk7cy1bDO6wG9opEZ5Rez9RTox3X/gIflfv0r+OXnV89lh6yxZOqBreC2
+4g0rcIvCyPUOVvoFJrCBiKgNSyc+7xvMnB4jtGOTQlWWz+Eqpah8Qjtv9OP6WPOExVf+eRgMB/oW
+aLE/f1s11W4xtq14HyYRqH5l4aV3OlOG4MIVczKDuTffOqFZIdItuh1JSs5oqX2YYPZhqDq/m6hT
+HFxDxFubqJV1gI0IhGqTQnwVZ42q76DGFQXBDEiW8cAtk1RKWQ==
+`pragma protect end_protected

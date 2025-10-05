@@ -1,0 +1,38 @@
+[
+ {
+  "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/FIFO_HS/src/test_fifo.v",
+  "InstLine" : 2,
+  "InstName" : "test_fifo",
+  "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/FIFO_HS/src/test_fifo.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "test_fifo",
+  "SubInsts" : [
+   {
+    "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/FIFO_HS/src/test_fifo.v",
+    "InstLine" : 87,
+    "InstName" : "rstn_gen",
+    "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/FIFO_HS/src/rstn_gen.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "rstn_gen"
+   },
+   {
+    "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/FIFO_HS/src/test_fifo.v",
+    "InstLine" : 397,
+    "InstName" : "u_fifo_hs_top",
+    "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/FIFO_HS/src/FIFO_HS/FIFO_HS.v",
+    "ModuleLine" : 752,
+    "ModuleName" : "FIFO_HS_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/FIFO_HS/src/FIFO_HS/FIFO_HS.v",
+      "InstLine" : 785,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/CPU/ram_tb/FIFO_HS/src/FIFO_HS/FIFO_HS.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~fifo.FIFO_HS_Top"
+     }
+    ]
+   }
+  ]
+ }
+]
