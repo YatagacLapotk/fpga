@@ -1,0 +1,18 @@
+[
+ {
+  "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/cpa_adder/cpa_adder/src/cpa_adder.v",
+  "InstLine" : 1,
+  "InstName" : "cla",
+  "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/cpa_adder/cpa_adder/src/cpa_adder.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "cla"
+ },
+ {
+  "InstFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/cpa_adder/cpa_adder/src/cla_tb.v",
+  "InstLine" : 1,
+  "InstName" : "cla_tb",
+  "ModuleFile" : "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/cpa_adder/cpa_adder/src/cla_tb.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "cla_tb"
+ }
+]

@@ -1,0 +1,72 @@
+#! /Users/yatagaclapotk/Programs/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20250103-17-g30123f894)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x12970dbb0 .scope module, "cla" "cla" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /INPUT 4 "b";
+    .port_info 2 /INPUT 1 "carry_in";
+    .port_info 3 /OUTPUT 4 "sum";
+    .port_info 4 /OUTPUT 1 "carry_out";
+P_0x129706670 .param/l "WIDTH" 0 2 2, +C4<00000000000000000000000000000100>;
+o0x130040370 .functor BUFZ 4, c4<zzzz>; HiZ drive
+o0x1300403a0 .functor BUFZ 4, c4<zzzz>; HiZ drive
+L_0x12971ecc0 .functor AND 4, o0x130040370, o0x1300403a0, C4<1111>, C4<1111>;
+L_0x12971f9b0 .functor OR 4, o0x130040370, o0x1300403a0, C4<0000>, C4<0000>;
+L_0x129720120 .functor AND 1, L_0x12971ff40, L_0x129720080, C4<1>, C4<1>;
+L_0x129720210 .functor OR 1, L_0x12971fe00, L_0x129720120, C4<0>, C4<0>;
+L_0x129720300 .functor AND 1, L_0x12971fd40, L_0x129720210, C4<1>, C4<1>;
+L_0x129720420 .functor OR 1, L_0x12971fca0, L_0x129720300, C4<0>, C4<0>;
+L_0x129720510 .functor AND 1, L_0x12971fbc0, L_0x129720420, C4<1>, C4<1>;
+L_0x129720640 .functor OR 1, L_0x12971fae0, L_0x129720510, C4<0>, C4<0>;
+o0x1300403d0 .functor BUFZ 1, c4<z>; HiZ drive
+L_0x1297207d0 .functor AND 1, L_0x129720730, o0x1300403d0, C4<1>, C4<1>;
+L_0x1297208d0 .functor OR 1, L_0x129720640, L_0x1297207d0, C4<0>, C4<0>;
+v0x129709be0_0 .net *"_ivl_11", 0 0, L_0x12971fd40;  1 drivers
+v0x12971e730_0 .net *"_ivl_13", 0 0, L_0x12971fe00;  1 drivers
+v0x12971e7d0_0 .net *"_ivl_15", 0 0, L_0x12971ff40;  1 drivers
+v0x12971e880_0 .net *"_ivl_17", 0 0, L_0x129720080;  1 drivers
+v0x12971e930_0 .net *"_ivl_18", 0 0, L_0x129720120;  1 drivers
+v0x12971ea20_0 .net *"_ivl_20", 0 0, L_0x129720210;  1 drivers
+v0x12971ead0_0 .net *"_ivl_22", 0 0, L_0x129720300;  1 drivers
+v0x12971eb80_0 .net *"_ivl_24", 0 0, L_0x129720420;  1 drivers
+v0x12971ec30_0 .net *"_ivl_26", 0 0, L_0x129720510;  1 drivers
+v0x12971ed40_0 .net *"_ivl_28", 0 0, L_0x129720640;  1 drivers
+v0x12971edf0_0 .net *"_ivl_31", 0 0, L_0x129720730;  1 drivers
+v0x12971ee90_0 .net *"_ivl_32", 0 0, L_0x1297207d0;  1 drivers
+v0x12971ef40_0 .net *"_ivl_36", 3 0, L_0x1297209a0;  1 drivers
+v0x12971eff0_0 .net *"_ivl_38", 3 0, L_0x129720aa0;  1 drivers
+L_0x130078010 .functor BUFT 1, C4<000>, C4<0>, C4<0>, C4<0>;
+v0x12971f0a0_0 .net *"_ivl_41", 2 0, L_0x130078010;  1 drivers
+v0x12971f150_0 .net *"_ivl_5", 0 0, L_0x12971fae0;  1 drivers
+v0x12971f200_0 .net *"_ivl_7", 0 0, L_0x12971fbc0;  1 drivers
+v0x12971f390_0 .net *"_ivl_9", 0 0, L_0x12971fca0;  1 drivers
+v0x12971f420_0 .net "a", 3 0, o0x130040370;  0 drivers
+v0x12971f4d0_0 .net "b", 3 0, o0x1300403a0;  0 drivers
+v0x12971f580_0 .net "carry_in", 0 0, o0x1300403d0;  0 drivers
+v0x12971f620_0 .net "carry_out", 0 0, L_0x1297208d0;  1 drivers
+v0x12971f6c0_0 .net "g", 3 0, L_0x12971ecc0;  1 drivers
+v0x12971f770_0 .net "p", 3 0, L_0x12971f9b0;  1 drivers
+v0x12971f820_0 .net "sum", 3 0, L_0x129720ba0;  1 drivers
+L_0x12971fae0 .part L_0x12971ecc0, 3, 1;
+L_0x12971fbc0 .part L_0x12971f9b0, 3, 1;
+L_0x12971fca0 .part L_0x12971ecc0, 2, 1;
+L_0x12971fd40 .part L_0x12971f9b0, 2, 1;
+L_0x12971fe00 .part L_0x12971ecc0, 1, 1;
+L_0x12971ff40 .part L_0x12971f9b0, 1, 1;
+L_0x129720080 .part L_0x12971ecc0, 0, 1;
+L_0x129720730 .reduce/and L_0x12971f9b0;
+L_0x1297209a0 .arith/sum 4, o0x130040370, o0x1300403a0;
+L_0x129720aa0 .concat [ 1 3 0 0], o0x1300403d0, L_0x130078010;
+L_0x129720ba0 .arith/sum 4, L_0x1297209a0, L_0x129720aa0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/cpa_adder/cpa_adder/src/cpa_adder.v";
