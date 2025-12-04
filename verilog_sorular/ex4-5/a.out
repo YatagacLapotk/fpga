@@ -1,0 +1,44 @@
+#! /Users/yatagaclapotk/Programs/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20250103-17-g30123f894)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x140204b30 .scope module, "minorty" "minorty" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /OUTPUT 1 "y";
+o0x128030190 .functor BUFZ 1, c4<z>; HiZ drive
+L_0x140218d50 .functor NOT 1, o0x128030190, C4<0>, C4<0>, C4<0>;
+o0x1280301c0 .functor BUFZ 1, c4<z>; HiZ drive
+L_0x140218dc0 .functor NOT 1, o0x1280301c0, C4<0>, C4<0>, C4<0>;
+o0x1280301f0 .functor BUFZ 1, c4<z>; HiZ drive
+L_0x140218e70 .functor NOT 1, o0x1280301f0, C4<0>, C4<0>, C4<0>;
+L_0x140218f40 .functor OR 1, L_0x140218dc0, L_0x140218e70, C4<0>, C4<0>;
+L_0x140219070 .functor AND 1, L_0x140218d50, L_0x140218f40, C4<1>, C4<1>;
+L_0x140219190 .functor NOT 1, o0x1280301c0, C4<0>, C4<0>, C4<0>;
+L_0x140219240 .functor NOT 1, o0x1280301f0, C4<0>, C4<0>, C4<0>;
+L_0x140219330 .functor AND 1, L_0x140219190, L_0x140219240, C4<1>, C4<1>;
+L_0x140219420 .functor OR 1, L_0x140219070, L_0x140219330, C4<0>, C4<0>;
+v0x140204ca0_0 .net *"_ivl_0", 0 0, L_0x140218d50;  1 drivers
+v0x140218510_0 .net *"_ivl_10", 0 0, L_0x140219190;  1 drivers
+v0x1402185b0_0 .net *"_ivl_12", 0 0, L_0x140219240;  1 drivers
+v0x140218660_0 .net *"_ivl_14", 0 0, L_0x140219330;  1 drivers
+v0x140218710_0 .net *"_ivl_2", 0 0, L_0x140218dc0;  1 drivers
+v0x140218800_0 .net *"_ivl_4", 0 0, L_0x140218e70;  1 drivers
+v0x1402188b0_0 .net *"_ivl_6", 0 0, L_0x140218f40;  1 drivers
+v0x140218960_0 .net *"_ivl_8", 0 0, L_0x140219070;  1 drivers
+v0x140218a10_0 .net "a", 0 0, o0x128030190;  0 drivers
+v0x140218b20_0 .net "b", 0 0, o0x1280301c0;  0 drivers
+v0x140218bb0_0 .net "c", 0 0, o0x1280301f0;  0 drivers
+v0x140218c50_0 .net "y", 0 0, L_0x140219420;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/ex4-5/ex4-5.sv";

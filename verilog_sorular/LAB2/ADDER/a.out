@@ -1,0 +1,159 @@
+#! /Users/yatagaclapotk/Programs/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20250103-17-g30123f894)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x12ae10f70 .scope module, "top" "top" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "A";
+    .port_info 1 /INPUT 4 "B";
+    .port_info 2 /OUTPUT 1 "Cout";
+    .port_info 3 /OUTPUT 4 "led";
+o0x130040d60 .functor BUFZ 4, c4<zzzz>; HiZ drive
+v0x12ae2b010_0 .net "A", 3 0, o0x130040d60;  0 drivers
+o0x130040d90 .functor BUFZ 4, c4<zzzz>; HiZ drive
+v0x12ae2b0a0_0 .net "B", 3 0, o0x130040d90;  0 drivers
+v0x12ae2b130_0 .net "Cout", 0 0, L_0x12ae2d360;  1 drivers
+v0x12ae2b1e0_0 .net "K", 2 0, L_0x12ae2d1b0;  1 drivers
+v0x12ae2b270_0 .net "led", 3 0, L_0x12ae2de40;  1 drivers
+L_0x12ae2bab0 .part o0x130040d60, 0, 1;
+L_0x12ae2bb50 .part o0x130040d90, 0, 1;
+L_0x12ae2c440 .part o0x130040d60, 1, 1;
+L_0x12ae2c560 .part o0x130040d90, 1, 1;
+L_0x12ae2c680 .part L_0x12ae2d1b0, 0, 1;
+L_0x12ae2ce90 .part o0x130040d60, 2, 1;
+L_0x12ae2cf70 .part o0x130040d90, 2, 1;
+L_0x12ae2d090 .part L_0x12ae2d1b0, 1, 1;
+L_0x12ae2d1b0 .concat8 [ 1 1 1 0], L_0x12ae2b3a0, L_0x12ae2bc30, L_0x12ae2c720;
+L_0x12ae2da40 .part o0x130040d60, 3, 1;
+L_0x12ae2dba0 .part o0x130040d90, 3, 1;
+L_0x12ae2dd20 .part L_0x12ae2d1b0, 2, 1;
+L_0x12ae2de40 .concat8 [ 1 1 1 1], L_0x12ae2b460, L_0x12ae2bcd0, L_0x12ae2c7c0, L_0x12ae2d400;
+S_0x12ae11f60 .scope module, "a0" "OnebitAdder" 2 7, 2 13 0, S_0x12ae10f70;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "Y";
+    .port_info 4 /OUTPUT 1 "Cout";
+v0x12ae10d50_0 .net "A", 0 0, L_0x12ae2bab0;  1 drivers
+v0x12ae283a0_0 .net "B", 0 0, L_0x12ae2bb50;  1 drivers
+L_0x1300780a0 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v0x12ae28440_0 .net "Cin", 0 0, L_0x1300780a0;  1 drivers
+v0x12ae284d0_0 .net "Cout", 0 0, L_0x12ae2b3a0;  1 drivers
+v0x12ae28570_0 .net "Y", 0 0, L_0x12ae2b460;  1 drivers
+L_0x130078058 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae28650_0 .net *"_ivl_10", 0 0, L_0x130078058;  1 drivers
+v0x12ae28700_0 .net *"_ivl_11", 1 0, L_0x12ae2b800;  1 drivers
+L_0x130078370 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v0x12ae287b0_0 .net *"_ivl_13", 1 0, L_0x130078370;  1 drivers
+v0x12ae28860_0 .net *"_ivl_17", 1 0, L_0x12ae2b970;  1 drivers
+v0x12ae28970_0 .net *"_ivl_3", 1 0, L_0x12ae2b560;  1 drivers
+L_0x130078010 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae28a20_0 .net *"_ivl_6", 0 0, L_0x130078010;  1 drivers
+v0x12ae28ad0_0 .net *"_ivl_7", 1 0, L_0x12ae2b6c0;  1 drivers
+L_0x12ae2b3a0 .part L_0x12ae2b970, 1, 1;
+L_0x12ae2b460 .part L_0x12ae2b970, 0, 1;
+L_0x12ae2b560 .concat [ 1 1 0 0], L_0x12ae2bab0, L_0x130078010;
+L_0x12ae2b6c0 .concat [ 1 1 0 0], L_0x12ae2bb50, L_0x130078058;
+L_0x12ae2b800 .arith/sum 2, L_0x12ae2b560, L_0x12ae2b6c0;
+L_0x12ae2b970 .arith/sum 2, L_0x12ae2b800, L_0x130078370;
+S_0x12ae28c00 .scope module, "a1" "OnebitAdder" 2 8, 2 13 0, S_0x12ae10f70;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "Y";
+    .port_info 4 /OUTPUT 1 "Cout";
+v0x12ae28e60_0 .net "A", 0 0, L_0x12ae2c440;  1 drivers
+v0x12ae28ef0_0 .net "B", 0 0, L_0x12ae2c560;  1 drivers
+v0x12ae28f80_0 .net "Cin", 0 0, L_0x12ae2c680;  1 drivers
+v0x12ae29030_0 .net "Cout", 0 0, L_0x12ae2bc30;  1 drivers
+v0x12ae290c0_0 .net "Y", 0 0, L_0x12ae2bcd0;  1 drivers
+L_0x130078130 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae291a0_0 .net *"_ivl_10", 0 0, L_0x130078130;  1 drivers
+v0x12ae29250_0 .net *"_ivl_11", 1 0, L_0x12ae2c070;  1 drivers
+v0x12ae29300_0 .net *"_ivl_13", 1 0, L_0x12ae2c1e0;  1 drivers
+L_0x130078178 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae293b0_0 .net *"_ivl_16", 0 0, L_0x130078178;  1 drivers
+v0x12ae294c0_0 .net *"_ivl_17", 1 0, L_0x12ae2c2c0;  1 drivers
+v0x12ae29570_0 .net *"_ivl_3", 1 0, L_0x12ae2bdb0;  1 drivers
+L_0x1300780e8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae29620_0 .net *"_ivl_6", 0 0, L_0x1300780e8;  1 drivers
+v0x12ae296d0_0 .net *"_ivl_7", 1 0, L_0x12ae2bef0;  1 drivers
+L_0x12ae2bc30 .part L_0x12ae2c2c0, 1, 1;
+L_0x12ae2bcd0 .part L_0x12ae2c2c0, 0, 1;
+L_0x12ae2bdb0 .concat [ 1 1 0 0], L_0x12ae2c440, L_0x1300780e8;
+L_0x12ae2bef0 .concat [ 1 1 0 0], L_0x12ae2c560, L_0x130078130;
+L_0x12ae2c070 .arith/sum 2, L_0x12ae2bdb0, L_0x12ae2bef0;
+L_0x12ae2c1e0 .concat [ 1 1 0 0], L_0x12ae2c680, L_0x130078178;
+L_0x12ae2c2c0 .arith/sum 2, L_0x12ae2c070, L_0x12ae2c1e0;
+S_0x12ae29800 .scope module, "a2" "OnebitAdder" 2 9, 2 13 0, S_0x12ae10f70;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "Y";
+    .port_info 4 /OUTPUT 1 "Cout";
+v0x12ae29a60_0 .net "A", 0 0, L_0x12ae2ce90;  1 drivers
+v0x12ae29af0_0 .net "B", 0 0, L_0x12ae2cf70;  1 drivers
+v0x12ae29b80_0 .net "Cin", 0 0, L_0x12ae2d090;  1 drivers
+v0x12ae29c30_0 .net "Cout", 0 0, L_0x12ae2c720;  1 drivers
+v0x12ae29cd0_0 .net "Y", 0 0, L_0x12ae2c7c0;  1 drivers
+L_0x130078208 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae29db0_0 .net *"_ivl_10", 0 0, L_0x130078208;  1 drivers
+v0x12ae29e60_0 .net *"_ivl_11", 1 0, L_0x12ae2ca80;  1 drivers
+v0x12ae29f10_0 .net *"_ivl_13", 1 0, L_0x12ae2cbf0;  1 drivers
+L_0x130078250 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae29fc0_0 .net *"_ivl_16", 0 0, L_0x130078250;  1 drivers
+v0x12ae2a0d0_0 .net *"_ivl_17", 1 0, L_0x12ae2cd50;  1 drivers
+v0x12ae2a180_0 .net *"_ivl_3", 1 0, L_0x12ae2c8a0;  1 drivers
+L_0x1300781c0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae2a230_0 .net *"_ivl_6", 0 0, L_0x1300781c0;  1 drivers
+v0x12ae2a2e0_0 .net *"_ivl_7", 1 0, L_0x12ae2c980;  1 drivers
+L_0x12ae2c720 .part L_0x12ae2cd50, 1, 1;
+L_0x12ae2c7c0 .part L_0x12ae2cd50, 0, 1;
+L_0x12ae2c8a0 .concat [ 1 1 0 0], L_0x12ae2ce90, L_0x1300781c0;
+L_0x12ae2c980 .concat [ 1 1 0 0], L_0x12ae2cf70, L_0x130078208;
+L_0x12ae2ca80 .arith/sum 2, L_0x12ae2c8a0, L_0x12ae2c980;
+L_0x12ae2cbf0 .concat [ 1 1 0 0], L_0x12ae2d090, L_0x130078250;
+L_0x12ae2cd50 .arith/sum 2, L_0x12ae2ca80, L_0x12ae2cbf0;
+S_0x12ae2a410 .scope module, "a3" "OnebitAdder" 2 10, 2 13 0, S_0x12ae10f70;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "Y";
+    .port_info 4 /OUTPUT 1 "Cout";
+v0x12ae2a670_0 .net "A", 0 0, L_0x12ae2da40;  1 drivers
+v0x12ae2a700_0 .net "B", 0 0, L_0x12ae2dba0;  1 drivers
+v0x12ae2a790_0 .net "Cin", 0 0, L_0x12ae2dd20;  1 drivers
+v0x12ae2a840_0 .net "Cout", 0 0, L_0x12ae2d360;  alias, 1 drivers
+v0x12ae2a8d0_0 .net "Y", 0 0, L_0x12ae2d400;  1 drivers
+L_0x1300782e0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae2a9b0_0 .net *"_ivl_10", 0 0, L_0x1300782e0;  1 drivers
+v0x12ae2aa60_0 .net *"_ivl_11", 1 0, L_0x12ae2d6a0;  1 drivers
+v0x12ae2ab10_0 .net *"_ivl_13", 1 0, L_0x12ae2d7e0;  1 drivers
+L_0x130078328 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae2abc0_0 .net *"_ivl_16", 0 0, L_0x130078328;  1 drivers
+v0x12ae2acd0_0 .net *"_ivl_17", 1 0, L_0x12ae2d8c0;  1 drivers
+v0x12ae2ad80_0 .net *"_ivl_3", 1 0, L_0x12ae2d4e0;  1 drivers
+L_0x130078298 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x12ae2ae30_0 .net *"_ivl_6", 0 0, L_0x130078298;  1 drivers
+v0x12ae2aee0_0 .net *"_ivl_7", 1 0, L_0x12ae2d5c0;  1 drivers
+L_0x12ae2d360 .part L_0x12ae2d8c0, 1, 1;
+L_0x12ae2d400 .part L_0x12ae2d8c0, 0, 1;
+L_0x12ae2d4e0 .concat [ 1 1 0 0], L_0x12ae2da40, L_0x130078298;
+L_0x12ae2d5c0 .concat [ 1 1 0 0], L_0x12ae2dba0, L_0x1300782e0;
+L_0x12ae2d6a0 .arith/sum 2, L_0x12ae2d4e0, L_0x12ae2d5c0;
+L_0x12ae2d7e0 .concat [ 1 1 0 0], L_0x12ae2dd20, L_0x130078328;
+L_0x12ae2d8c0 .arith/sum 2, L_0x12ae2d6a0, L_0x12ae2d7e0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/LAB2/ADDER/adder.v";

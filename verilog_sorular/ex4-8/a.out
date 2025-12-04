@@ -1,0 +1,43 @@
+#! /Users/yatagaclapotk/Programs/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20250103-17-g30123f894)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x140e06c70 .scope module, "mux4" "mux4" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 2 "s";
+    .port_info 1 /INPUT 4 "d";
+    .port_info 2 /OUTPUT 1 "y";
+v0x140e06e60_0 .net *"_ivl_1", 0 0, L_0x140e17710;  1 drivers
+v0x140e16eb0_0 .net *"_ivl_11", 0 0, L_0x140e17c00;  1 drivers
+v0x140e16f50_0 .net *"_ivl_13", 0 0, L_0x140e17ca0;  1 drivers
+v0x140e17000_0 .net *"_ivl_15", 0 0, L_0x140e17d80;  1 drivers
+v0x140e170b0_0 .net *"_ivl_16", 0 0, L_0x140e17ea0;  1 drivers
+v0x140e171a0_0 .net *"_ivl_3", 0 0, L_0x140e177b0;  1 drivers
+v0x140e17250_0 .net *"_ivl_5", 0 0, L_0x140e17890;  1 drivers
+v0x140e17300_0 .net *"_ivl_7", 0 0, L_0x140e17970;  1 drivers
+v0x140e173b0_0 .net *"_ivl_8", 0 0, L_0x140e17a70;  1 drivers
+o0x1480181c0 .functor BUFZ 4, c4<zzzz>; HiZ drive
+v0x140e174c0_0 .net "d", 3 0, o0x1480181c0;  0 drivers
+o0x1480181f0 .functor BUFZ 2, c4<zz>; HiZ drive
+v0x140e17570_0 .net "s", 1 0, o0x1480181f0;  0 drivers
+v0x140e17620_0 .net "y", 0 0, L_0x140e17fd0;  1 drivers
+L_0x140e17710 .part o0x1480181f0, 1, 1;
+L_0x140e177b0 .part o0x1480181f0, 0, 1;
+L_0x140e17890 .part o0x1480181c0, 3, 1;
+L_0x140e17970 .part o0x1480181c0, 2, 1;
+L_0x140e17a70 .functor MUXZ 1, L_0x140e17970, L_0x140e17890, L_0x140e177b0, C4<>;
+L_0x140e17c00 .part o0x1480181f0, 0, 1;
+L_0x140e17ca0 .part o0x1480181c0, 1, 1;
+L_0x140e17d80 .part o0x1480181c0, 0, 1;
+L_0x140e17ea0 .functor MUXZ 1, L_0x140e17d80, L_0x140e17ca0, L_0x140e17c00, C4<>;
+L_0x140e17fd0 .functor MUXZ 1, L_0x140e17ea0, L_0x140e17a70, L_0x140e17710, C4<>;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/ex4-8/mux4.sv";

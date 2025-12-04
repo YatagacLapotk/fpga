@@ -1,0 +1,74 @@
+#! /Users/yatagaclapotk/Programs/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20250103-17-g30123f894)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x158004960 .scope module, "top" "top" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 1 "enable";
+    .port_info 3 /OUTPUT 6 "led";
+P_0x158004ad0 .param/l "WAIT_TIME" 1 2 9, +C4<00000000010011000100101101000000>;
+L_0x1580150f0 .functor NOT 6, v0x158014f20_0, C4<000000>, C4<000000>, C4<000000>;
+o0x130008010 .functor BUFZ 1, c4<z>; HiZ drive
+v0x158004c80_0 .net "clk", 0 0, o0x130008010;  0 drivers
+v0x158014d30_0 .var "clockCounter", 23 0;
+o0x130008070 .functor BUFZ 1, c4<z>; HiZ drive
+v0x158014dd0_0 .net "enable", 0 0, o0x130008070;  0 drivers
+v0x158014e80_0 .net "led", 5 0, L_0x1580150f0;  1 drivers
+v0x158014f20_0 .var "ledCounter", 5 0;
+o0x130008100 .functor BUFZ 1, c4<z>; HiZ drive
+v0x158015010_0 .net "reset", 0 0, o0x130008100;  0 drivers
+E_0x158004c20 .event posedge, v0x158004c80_0;
+    .scope S_0x158004960;
+T_0 ;
+    %pushi/vec4 0, 0, 6;
+    %store/vec4 v0x158014f20_0, 0, 6;
+    %pushi/vec4 0, 0, 24;
+    %store/vec4 v0x158014d30_0, 0, 24;
+    %end;
+    .thread T_0;
+    .scope S_0x158004960;
+T_1 ;
+    %wait E_0x158004c20;
+    %load/vec4 v0x158015010_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 0, 0, 24;
+    %assign/vec4 v0x158014d30_0, 0;
+    %pushi/vec4 0, 0, 6;
+    %assign/vec4 v0x158014f20_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v0x158014dd0_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.2, 8;
+    %load/vec4 v0x158014d30_0;
+    %addi 1, 0, 24;
+    %assign/vec4 v0x158014d30_0, 0;
+    %load/vec4 v0x158014d30_0;
+    %pad/u 32;
+    %cmpi/e 5000000, 0, 32;
+    %jmp/0xz  T_1.4, 4;
+    %pushi/vec4 0, 0, 24;
+    %assign/vec4 v0x158014d30_0, 0;
+    %load/vec4 v0x158014f20_0;
+    %addi 1, 0, 6;
+    %assign/vec4 v0x158014f20_0, 0;
+T_1.4 ;
+T_1.2 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/pc2/src/pc2.v";

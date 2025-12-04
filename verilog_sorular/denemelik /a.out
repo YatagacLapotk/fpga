@@ -1,0 +1,41 @@
+#! /Users/yatagaclapotk/Programs/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20250103-17-g30123f894)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x149905920 .scope module, "programcounter" "programcounter" 2 2;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /OUTPUT 4 "pc";
+o0x150040010 .functor BUFZ 1, c4<z>; HiZ drive
+v0x149905a90_0 .net "clk", 0 0, o0x150040010;  0 drivers
+v0x149917420_0 .var "pc", 3 0;
+o0x150040070 .functor BUFZ 1, c4<z>; HiZ drive
+v0x1499174c0_0 .net "reset", 0 0, o0x150040070;  0 drivers
+E_0x149905800 .event posedge, v0x149905a90_0;
+    .scope S_0x149905920;
+T_0 ;
+    %wait E_0x149905800;
+    %load/vec4 v0x1499174c0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v0x149917420_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x149917420_0;
+    %addi 1, 0, 4;
+    %assign/vec4 v0x149917420_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/denemelik /denemelik.v";
