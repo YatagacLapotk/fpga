@@ -1,0 +1,81 @@
+#! /Users/yatagaclapotk/Programs/oss-cad-suite/bin/vvp
+:ivl_version "13.0 (devel)" "(s20250103-17-g30123f894)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/system.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/v2005_math.vpi";
+:vpi_module "/Users/yatagaclapotk/Programs/oss-cad-suite/lib/ivl/va_math.vpi";
+S_0x158706c90 .scope module, "shiftselect_tb" "shiftselect_tb" 2 3;
+ .timescale 0 0;
+v0x15871d240_0 .var "clk", 0 0;
+v0x15871d2d0_0 .var "in_tb", 7 0;
+v0x15871d360_0 .var "lr_tb", 0 0;
+v0x15871d430_0 .net "out_tb", 7 0, L_0x15871d920;  1 drivers
+S_0x158705900 .scope module, "uut" "shiftselect" 2 9, 3 1 0, S_0x158706c90;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "in";
+    .port_info 1 /INPUT 1 "lr";
+    .port_info 2 /OUTPUT 8 "out";
+v0x158706e00_0 .net *"_ivl_1", 6 0, L_0x15871d4c0;  1 drivers
+v0x15871cbd0_0 .net *"_ivl_10", 7 0, L_0x15871d7c0;  1 drivers
+L_0x150078010 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x15871cc80_0 .net/2u *"_ivl_2", 0 0, L_0x150078010;  1 drivers
+v0x15871cd40_0 .net *"_ivl_4", 7 0, L_0x15871d5c0;  1 drivers
+L_0x150078058 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x15871cdf0_0 .net/2u *"_ivl_6", 0 0, L_0x150078058;  1 drivers
+v0x15871cee0_0 .net *"_ivl_9", 6 0, L_0x15871d720;  1 drivers
+v0x15871cf90_0 .net "in", 7 0, v0x15871d2d0_0;  1 drivers
+v0x15871d040_0 .net "lr", 0 0, v0x15871d360_0;  1 drivers
+v0x15871d0e0_0 .net "out", 7 0, L_0x15871d920;  alias, 1 drivers
+L_0x15871d4c0 .part v0x15871d2d0_0, 0, 7;
+L_0x15871d5c0 .concat [ 1 7 0 0], L_0x150078010, L_0x15871d4c0;
+L_0x15871d720 .part v0x15871d2d0_0, 1, 7;
+L_0x15871d7c0 .concat [ 7 1 0 0], L_0x15871d720, L_0x150078058;
+L_0x15871d920 .functor MUXZ 8, L_0x15871d7c0, L_0x15871d5c0, v0x15871d360_0, C4<>;
+    .scope S_0x158706c90;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x15871d240_0, 0, 1;
+T_0.0 ;
+    %delay 5, 0;
+    %load/vec4 v0x15871d240_0;
+    %inv;
+    %store/vec4 v0x15871d240_0, 0, 1;
+    %jmp T_0.0;
+T_0.1 ;
+    %end;
+    .thread T_0;
+    .scope S_0x158706c90;
+T_1 ;
+    %pushi/vec4 170, 0, 8;
+    %store/vec4 v0x15871d2d0_0, 0, 8;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x15871d360_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 234, 0, 8;
+    %store/vec4 v0x15871d2d0_0, 0, 8;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x15871d360_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 2, 0, 8;
+    %store/vec4 v0x15871d2d0_0, 0, 8;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x15871d360_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 29 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x158706c90;
+T_2 ;
+    %vpi_call 2 32 "$dumpfile", "shiftselect_tb.vcd" {0 0 0};
+    %vpi_call 2 33 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x158706c90 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/FPGA_PROTOTYPING_BOOK/multi_function_barrel_shifter/first_rpogram_tb.v";
+    "/Users/yatagaclapotk/Desktop/Genel_Calismalar/FPGA/verilog_sorular/FPGA_PROTOTYPING_BOOK/multi_function_barrel_shifter/first_pogram.v";
